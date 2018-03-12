@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="kr" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="common.min.js"></script>
+    <script src="sw.js"></script>
+    <script src="HWSwipe.js"></script>
+    
+    <style>
+        ul { list-style: none; padding:0; margin:0 }
+        html, body { margin:0; padding:0; background:#333 }
+        .elBrandSwipe { position:relative }
+        .elBrandSwipe:after { content:""; padding-top:100%; width:100%; }
+        .elBrandSwipe li { position:absolute; min-height:200px; color:#333; background:rgba(255,255,255,1); }
+        .elBrandSwipe li span { position:absolute; left:50%; top:50%; transform:translate3d(-50%,-50%,0px) }
+        .clear:after { content:""; display:block; clear:both }
+        .mask { width:80%; margin:0 auto; /*overflow: hidden*/ }
+        .controller { padding:10px  }
+        .controller a:first-child { float:left; }
+        .controller a:last-child { float:right; }
+        .indicator  {  padding:10px; text-align: center }
+        .indicator span { display:inline-block; margin:0 2px;  border-radius: 50%; width:8px; height:8px; background:#555 }
+         .indicator span.active { background:#888 }
+        a { color:#fff }
+    </style>
+    
+</head>
+<body ng-controller='BrandCtrl'>
+        
+    <div>
+        <div class='mask'>
+            <ul 
+                hw-swipe 
+                width320="1"
+                width640="3" 
+                width900="4" 
+                swipe-controller="hwswipeControl" 
+                infinite="true" 
+                swipe-index="sindex"
+                swipe-total="stotal"
+                copy="true"
+                class='elBrandSwipe clear'>
+                <li ng-repeat='item in swipeData' style='background:{{colorMatch[$index]}}'> 
+                    <span>{{item}}</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class='clear controller'> 
+            <a href='#' ng-click='hwswipeControl("prev")'>prev</a>
+            <a href='#' ng-click='hwswipeControl("next")'>next</a>
+        </div>
+        
+        <div class='indicator'>
+                <span 
+                    ng-repeat='item in stotal | hwRange' 
+                    ng-class='{active:$index==sindex}'
+                    ng-click='hwswipeControl($index)'>    
+                </span>
+        </div>
+    
+    </div>
+
+    <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+
+</body>
+</html>

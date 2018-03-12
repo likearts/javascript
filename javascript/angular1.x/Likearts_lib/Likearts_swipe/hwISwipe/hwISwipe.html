@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> HW One Swipe </title>
+	<script src="common.min.js"></script>
+	<script src="hwISwipe.js"></script>
+	<script src='likearts.js'></script>
+
+	<style>
+		html, body { margin:0; padding: 0 }
+		.swipe_wrap { }
+		.swipe_wrap ul { margin:0; padding:0; list-style:none; white-space:nowrap; position:relative }
+		.swipe_wrap li { padding:50px 0;  width:100%; display:inline-block; text-align: center }
+		.clear:after { content:""; display: block; clear:both; }
+
+		.swipe_wrap li:nth-child(1) { padding:60px 0 }
+		.swipe_wrap li:nth-child(2) { padding:70px 0 }
+		.swipe_wrap li:nth-child(3) { padding:80px 0 }
+		.swipe_wrap li:nth-child(4) { padding:90px 0 }
+		.swipe_wrap li:nth-child(5) { padding:100px 0 }
+		.swipe_wrap li:nth-child(6) { padding:110px 0 }
+		.swipe_wrap li:nth-child(7) { padding:120px 0 }
+		.swipe_wrap li:nth-child(8) { padding:130px 0 }
+		
+		.indicator { padding:20px 0; text-align: center }
+		.indicator span { display:inline-block; text-align: center; background:#444; border-radius: 50%; width:6px; height:6px;  margin: 0 2px }
+		.indicator span.active { background:#888 }
+		.control { padding:20px 10px }
+		.control a:first-child { float:left }
+		.control a:last-child { float:right }
+	</style>
+</head>
+<body ng-app='likearts' ng-controller='likeartsCtrl'>
+
+	<div ng-if="swipeData.length">
+		<div class='swipe_wrap'>
+
+			<ul class='clear'
+				hw-one-swipe
+				swipe-index='swpIndex'
+				swipe-page='swpPage'
+				swiepe-control='swpControl'
+				easing='easeOutExpo'
+				side-space='600'
+				space-percent='10'
+				auto-height='true'>
+				<li
+					ng-repeat='item in swipeData'
+					style='background:{{colorMatch[$index]}}'>
+					{{item}}
+				</li>
+			</ul>
+		</div>
+
+		<div class='indicator' ng-if="swpPage">
+			<span
+				ng-repeat='btn in swpPage | hwIswpRange'
+				ng-class='{active:swpIndex==$index}'
+				ng-click='swpControl($index)'>
+			</span>
+		</div>
+
+		<div class='control clear'>
+			<a ng-click="swpControl('prev')"> prev </a>
+			<a ng-click="swpControl('next')"> next </a>
+		</div>
+
+	</div>
+
+</body>
+</html>

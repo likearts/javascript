@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="kr" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> hwSlider v2 </title>
+    <script src="common.min.js"></script>
+    <script src="hwslider2.js"></script>
+
+    <style>
+        html, body{ margin:0; padding:0 }
+        ul { list-style: none; margin:0; padding:0 }
+    	.slider_wrap { text-align:center; width:100%; overflow:hidden }
+    	.slider_wrap ul { white-space: nowrap; display: inline-block }
+    	.slider_wrap li { position:relative; transition:background ease .4s; color:#fff; display: inline-block; min-width:120px; min-height:120px; border-right:1px solid #f9f9f9 }
+        .slider_wrap li img { width:120px; height:auto; }
+        .slider_wrap li.active { background:#ff6364 }
+        .slider_wrap li span { display:table; width:100%; height:100% }
+        .slider_wrap li span em { text-align:center; display:table-cell; vertical-align: middle; font-style:normal }
+        .slider_wrap li b { background:#ff6364; color:#fff; padding:10px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) }
+        
+        .ball { white-space: nowrap; border:2px solid red; display: inline-block; background:#ff6364; -webkit-transition:-webkit-transform ease .1s; font-size:11px; color:#fff; letter-spacing: 7px }
+        .ball img {  width:80px; height:auto }
+    </style>
+    <script>
+        var sx = 0, m = xx = 0, inv = 0, over = "", itemW = 0;
+        /*
+        function mx (){
+            var nx = sx -= ( sx - m )/10;
+            if( Math.round(nx) > 360 && over!= "right" ) {
+                xx = xx-Math.round(nx);
+                m = 360-(xx);
+                over = "right";
+            }
+            if( Math.round(nx) < 0 && over != "left" ) {
+                m = Math.abs(Math.round(m));
+                xx = m;
+                over = "left";
+            }
+            if( Math.round(nx) == Math.round(m) )  {
+                clearInterval(inv);
+                nx = Math.round(nx);
+                over = "";
+            }
+            console.log( 'm', m);
+            angular.element(".ball").css({
+                '-webkit-transform':'translateX('+nx+'px)'
+            })
+        }
+        */
+        function mx (){
+            var dx = getTranslateX();
+            dx -= ( dx-m )/8, itemW = angular.element(".ball")[0].clientWidth;
+            if( Math.round(dx) > 0 && over!= "right" ) {
+                m = -Math.round(m);
+                over = "right";
+            }
+            if( Math.round(dx) < -(itemW-window.innerWidth) && over != "left" ) {
+                console.log( '# LEFT', dx );
+                m = Math.abs(xx)-Math.abs(Math.round(dx)) - (itemW-window.innerWidth);
+                xx = m;
+                over = "left";
+            }
+            if( Math.round(dx) == Math.round(m) )  {
+                 console.log( '# RIGHT', dx );
+                clearInterval(inv);
+                m = Math.round(dx);
+                over = "";
+            }
+            angular.element(".ball").css({
+                '-webkit-transform':'translateX('+(dx)+'px)'
+            })
+        }
+        function setPos(x){
+            m = xx = x;
+            clearInterval(inv);
+            over = "";
+            sx = 0;
+            itemW = angular.element(".ball")[0].clientWidth;
+            inv = setInterval(mx,50);
+        }
+
+        function getTranslateX() {
+          var style = window.getComputedStyle( angular.element(".ball")[0] );
+          var matrix = new WebKitCSSMatrix(style.webkitTransform);
+          console.log('translateX: ', matrix.m41);
+          return matrix.m41;
+        }
+            
+</script>
+</head>
+<body ng-controller='hwCtrl'>
+
+    <div hw-slider2 auto-center="true" class='slider_wrap'>
+        <ul ng-init='items0=exData(1)'>
+            <li ng-repeat='item in items0' ng-init='cr=rcr()' ng-click="eclick($event)" style="background:{{cr}}">
+                <b>{{$index+1}}</b>
+            </li>
+        </ul>
+    </div>
+    
+    <div hw-slider2 auto-center="true"  class='slider_wrap'>
+        <ul ng-init='items1=exData(5)'>
+            <li ng-repeat='item in items1' ng-init='cr=rcr()' ng-click="eclick($event)" style="background:{{cr}}">
+                <b>{{$index+1}}</b>
+            </li>
+        </ul>
+    </div>
+
+    <div hw-slider2 auto-center="true" bounce="true" class='slider_wrap'>
+        <ul ng-init='items2=exData(15)'>
+            <li ng-repeat='item in items2' ng-init='cr=rcr()' ng-click="eclick($event)" style="background:{{cr}}">
+                <b>{{$index+1}}</b>
+            </li>
+        </ul>
+    </div>
+
+     <div hw-slider2 auto-center="true" class='slider_wrap'>
+        <ul ng-init='items3=exData(30)'>
+            <li ng-repeat='item in items3' ng-init='cr=rcr()' ng-click="eclick($event)" style="background:{{cr}}">
+                <b>{{$index+1}}</b>
+            </li>
+        </ul>
+    </div>
+
+     <div hw-slider2 auto-center="true" bounce="true" class='slider_wrap'>
+        <ul ng-init='items4=exData(50)'>
+            <li ng-repeat='item in items4' ng-init='cr=rcr()' ng-click="eclick($event)" >
+                <b>{{$index+1}}</b>
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+    	angular.module('app', ['hwslider2'])
+    	.controller('hwCtrl', function($scope){
+
+            $scope.exData = function(n) {
+                var ar = [];
+                for(var i=0;i<n;++i) ar.push(i);
+                return ar;
+            }
+    		
+    		$scope.eclick = function(e){
+    		    //console.log(e);
+            }
+
+            $scope.rcr = function(){
+                return 'rgba('+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+',1)';
+            }
+
+             $scope.images = [ 
+                {img:"http://image.lotte.com/goods/83/38/67/28/2/228673883_4_280.jpg"},
+                {img:"http://image.lotte.com/goods/74/28/66/46/4/446662874_1_280.jpg"},
+                {img:"http://image.lotte.com/goods/78/11/74/80/2/280741178_8_280.jpg"},
+                {img:"http://image.lotte.com/goods/10/41/43/15/2/215434110_1_280.jpg"},
+                {img:"http://image.lotte.com/goods/27/10/74/62/3/362741027_1_280.jpg"},
+                {img:"http://image.lotte.com/goods/71/79/74/47/3/347747971_2_280.jpg"},
+                {img:"http://image.lotte.com/goods/43/61/97/51/4/451976143_1_280.jpg"},
+                {img:"http://image.lotte.com/goods/46/30/23/66/2/266233046_9_280.jpg"},
+                {img:"http://image.lotte.com/goods/14/22/28/47/4/447282214_1_280.jpg"},
+                {img:"http://image.lotte.com/goods/14/22/28/47/4/447282214_1_280.jpg"},
+                {img:"http://image.lotte.com/goods/83/38/67/28/2/228673883_4_280.jpg"},
+                {img:"http://image.lotte.com/goods/74/28/66/46/4/446662874_1_280.jpg"},
+                {img:"http://image.lotte.com/goods/78/11/74/80/2/280741178_8_280.jpg"},
+                {img:"http://image.lotte.com/goods/10/41/43/15/2/215434110_1_280.jpg"}
+            ];
+
+            $scope.reset = function(){
+                clearInterval(inv);
+                over = "";
+            }
+    	})
+    </script>
+
+</body>
+</html>

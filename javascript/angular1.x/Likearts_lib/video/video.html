@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>test</title>
+    <link rel="stylesheet" type="text/css" href="hwVideo.css">
+	<script src="http://m.lotte.com/lotte/resources/r20171106_1/common.min.js"></script>
+    <script src="./hwvideo.js"></script>
+</head>
+<body ng-app='hw' ng-controller='hwCtrl'>
+		<div class="videoWrap" ng-repeat="vitem in videoList">
+			<div hw-video play-Ticlick="playticlick" stop-Ticlick="" end-Ticlick="">
+				<video poster="{{vitem.posterUrl}}" >
+					<source ng-src="{{vitem.videoUrl | trustUrl}}"/>
+				</video>
+				<div class="video_controller" ng-class="{showVctrl:vctr}">
+					<div class="control_in_wrap">
+						<em class="ctr_btn btn_play" ng-class="{btn_pause:state.play}" ng-click="video.play()"></em>
+						<em ng-if="state.play" class="ctr_btn btn_volume" ng-class="{btn_volume:!state.mute,mute:state.mute}" ng-click="video.mute()"></em>
+						<em ng-if="state.play" class="ctr_btn btn_arrow"></em>
+					</div>
+                    <em class="btn_fullscreen" ng-click="video.fullscreen()"></em>
+				</div>
+				 <div class="video_bottom">
+                    <div class="table">
+                        <div class="cell progress">
+                            <pregress>
+                                <bar style="width:{{progress}}"></bar>
+                                <dragBar seeker></dragBar>
+                            </pregress>
+                        </div>
+                        <div class="cell timer">
+                            <time>{{videotime}}</time>
+                        </div>
+                    </div>
+                </div>
+				<loading ng-if="waiting"></loading>
+			</div>
+		</div>
+		
+		<script>
+			angular.module('hw',['hwVideo'])
+			.controller('hwCtrl', ['$scope',
+                function($scope){
+				    $scope.videoList = [
+                        {
+                            videoUrl : 'http://www.ithinknext.com/mydata/board/files/F201308021823010.mp4',
+                            posterUrl : 'http://image.lotte.com/upload/display/corner/5494835_44355_0_30_13008273_660.jpg'
+                        },
+                        {
+                            videoUrl : 'http://www.ithinknext.com/mydata/board/files/F201308021823010.mp4',
+                            posterUrl : 'http://image.lotte.com/upload/display/corner/5494835_44355_0_30_13008273_660.jpg'
+                        },
+                        {
+                            videoUrl : 'http://www.ithinknext.com/mydata/board/files/F201308021823010.mp4',
+                            posterUrl : 'http://image.lotte.com/upload/display/corner/5494835_44355_0_30_13008273_660.jpg'
+                        },
+                        {
+                            videoUrl : 'http://www.ithinknext.com/mydata/board/files/F201308021823010.mp4',
+                            posterUrl : 'http://image.lotte.com/upload/display/corner/5494835_44355_0_30_13008273_660.jpg'
+                        },
+                        {
+                            videoUrl : 'http://www.ithinknext.com/mydata/board/files/F201308021823010.mp4',
+                            posterUrl : 'http://image.lotte.com/upload/display/corner/5494835_44355_0_30_13008273_660.jpg'
+                        }
+                    ];
+    		    }  
+            ]);
+		</script>
+	
+</body>
+</html>

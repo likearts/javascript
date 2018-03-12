@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kr" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> hwSlider </title>
+    <script src="common.min.js"></script>
+    <script src="hwslider.js"></script>
+
+    <style>
+        html, body{ margin:0; padding:0 }
+        ul { list-style: none; margin:0; padding:0 }
+    	.slider_wrap { text-align:center; width:100%; overflow:hidden }
+    	.slider_wrap ul { white-space: nowrap; display: inline-block }
+    	.slider_wrap li { position:relative; transition:background ease .4s; background:#34b6f5; color:#fff; display: inline-block; min-width:280px; min-height:280px; border-right:1px solid #f9f9f9 }
+        .slider_wrap li.active { background:#ff6364 }
+        .slider_wrap li span { display:table; width:100%; height:100% }
+        .slider_wrap li span em { text-align:center; display:table-cell; vertical-align: middle; font-style:normal }
+        .slider_wrap li b { background:#ff6364; color:#fff; padding:10px; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) }
+    </style>
+</head>
+<body ng-controller='hwCtrl'>
+
+    <div class='slider_wrap'>
+        <ul hw-slider auto-center="true">
+            <li ng-repeat='item in items' ng-click="eclick($event)">
+                <img ng-src="http://image.lotte.com/goods/17/72/28/15/3/315287217_1_280.jpg" alt=""/>
+                <b>{{$index+1}}</b>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+    	angular.module('app', ['hwslider'])
+    	.controller('hwCtrl', function($scope){
+    		$scope.items = [ ];
+    		for(var i=0;i<60;++i) $scope.items.push(i);
+    		$scope.eclick = function(e){
+    		    console.log(e);
+            }
+    	})
+    </script>
+
+</body>
+</html>
