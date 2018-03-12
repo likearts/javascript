@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title></title>
+	<script src="../angular.min.js"></script>
+</head>
+<body ng-app='likearts'>
+
+		<!-- transclude 미 적용 -->
+		<transclude-no>
+			<p>원문 내용01 입니다.</p>
+		</transclude-no>
+		
+		<!-- transclude 적용 -->
+		<transclude-yes>
+			<p>원문 내용02 입니다.</p>
+		</transclude-yes>
+		
+		<script>
+			angular.module('likearts',[])
+
+			// transclude 미적용
+			.directive('transcludeNo',function(){
+				return {
+					restrict:'E',
+					template:'<div><h3>디렉티브 내용....<h3><div></div></div>',
+					link: function(scope){
+
+					}
+				}
+			})
+			
+			// transclude 적용
+			.directive('transcludeYes',function(){
+				return {
+					restrict:'E',
+					transclude:true, // 원문 내용 포함 여부
+					template:'<div><h3>디렉티브 내용....<h3><div ng-transclude></div></div>', // 원문이 포함될 태그에 ng-transclude 추가
+					link: function(scope){
+
+					}
+				}
+			})
+
+			/**
+				transclude는
+				directive 적용전 들어 있는 내용의 directive 적용후에 포함시킬지 여부를 설정할 수 있다.
+			*/ 
+			
+		</script>
+
+</body>
+</html>

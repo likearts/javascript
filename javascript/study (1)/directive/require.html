@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title></title>
+	<script src="../angular.min.js"></script>
+</head>
+<body ng-app='likearts'>
+
+		<div tabs>
+			<p>controller가 포함 | controller : {{isCtrl}}</p>
+			<div tab1>
+				<p>controller가 미 포함 | controller : {{isCtrl}}</p>
+			</div>
+			<div tab2>
+				<p>tabs controller를 상속 | controller : {{isCtrl}}</p>
+			</div>
+		</div>
+			
+		<script>
+			angular.module('likearts',[])
+			
+			.directive('tabs',function(){
+				return {
+					restrict:'A',
+					scope:true,
+					controller : function(){
+						this.tabListLoader = function( str ){
+							console.log( str +' > tab list loader');
+							return true;
+						}
+					},
+					link: function(scope,element,attrs,controller){ // 4번째 인자가 컨트롤러
+						scope.isCtrl = false;
+						try{ scope.isCtrl = controller.tabListLoader('TABS'); } catch(e) 
+						{ scope.isCtrl = false; console.log( 'not controller TABS') }
+					}
+				}
+			})
+
+			.directive('tab1',function(){
+				return {
+					restrict:'A',
+					scope:true,
+					link: function(scope,element,attrs, controller){ // 4번째 인자가 컨트롤러
+						scope.isCtrl = false;
+						try{ scope.isCtrl = controller.tabListLoader('TAB1'); } catch(e) 
+						{ scope.isCtrl = false; console.log( 'not controller TAB1') }
+					}
+				}
+			})
+
+			.directive('tab2',function(){
+				return {
+					restrict:'A',
+					scope:true,
+					require:'^tabs', // 상위 디렉티브의 컨트롤러 포함 시킴
+					link: function(scope,element,attrs,controller){ // 4번째 인자가 컨트롤러
+						scope.isCtrl = false;
+						try{ scope.isCtrl = controller.tabListLoader('TAB2'); } catch(e) 
+						{ scope.isCtrl = false; console.log( 'not controller TAB2') }
+					}
+				}
+			})
+
+			
+			/**
+				require는 
+				상위 '디렉티브명'으로 디렉티브의 사용중인 'conrtoller'를 가져올 수 있다.
+
+			**/
+
+		</script>
+
+</body>
+</html>

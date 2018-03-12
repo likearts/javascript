@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title></title>
+	<script src="../angular.min.js"></script>
+</head>
+<body ng-app='likearts'>
+
+		<div file-uploader>
+			<input type='file' onchange='angular.element(this).scope().change(this)'/>
+		</div>
+			
+		<script>
+			angular.module('likearts',[])
+
+			.value('baseValues',{
+				extension : '.jpg',
+				domain:'lotte.com'
+			})
+			
+			.directive('fileUploader', function(baseValues){
+					return {
+						restrict:'A',
+						scope:true,
+						link : function(scope){
+							scope.change = function(input){
+								var file = input.files[0],
+										lastDot = file.name.lastIndexOf('.'),
+										extension = file.name.substr(lastDot);
+
+								if(extension.toString().indexOf(baseValues.extension) ==-1 ){
+									alert( baseValues.extension +"만 업로드 가능합니다" );
+									event.preventDefault(); 
+									setTimeout(function(){
+										input.value='';
+									},500);
+									return;
+								}
+							}
+						}
+					}
+			})
+			
+			.run(function(baseValues){
+				angular.extend(baseValues,{extension:'.png',domain:'ellotte.com'});
+			})
+			
+			/**
+				Value는 설정값을 변경할때 사용 한다.
+				예제는 파일 업로드 기본은 jpg 만 가능하다.
+
+				특정 페이지에서 실행시에는 .png만 가능하게 하려면
+				모듈이 분리되고 파일업로드 directive lotte_common 같은곳에 있어도
+				value 변경으로 체크값을 바꿀 수 있다. 
+			**/
+
+		</script>
+
+</body>
+</html>

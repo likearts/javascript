@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title></title>
+	<script src="../angular.min.js"></script>
+</head>
+<body ng-app='likearts'>
+
+		<div file-uploader>
+			<input type='file' onchange='angular.element(this).scope().change(this)'/>
+		</div>
+		
+		<script>
+			
+			/**
+				기본 설정만 가지고 있는 모듈
+			**/
+			angular.module('settings',[])	
+				.value('domain',{
+						host:'lotte.com'
+				})
+				.provider('extention',function(){
+			   	var filter = ".jpg";
+			   	return {
+				   	setExtention : function(str){
+				   		filter=str;
+				   	},
+				   	$get : function(){
+				   		return filter;
+				   	}
+			   	}
+		   	})
+			.directive('fileUploader', function(extention){
+				return {
+					restrict:'A',
+					scope:true,
+					link : function(scope){
+						scope.change = function(input){
+								var file = input.files[0],
+										lastDot = file.name.lastIndexOf('.'),
+										ext = file.name.substr(lastDot);
+
+								if(ext.toString().indexOf(extention) ==-1 ){
+									alert( extention +"만 업로드 가능합니다" );
+									event.preventDefault(); 
+									setTimeout(function(){
+										input.value='';
+									},500);
+									return;
+								}
+						}
+					}
+				}
+			})
+
+			
+
+			/**
+				특정페이서만 쓰는 모듈
+			**/
+			angular.module('likearts',['settings'])
+				
+			.run(function(domain){
+				angular.extend(domain,{host:'ellotte.com'})
+			})
+
+			/** 
+				이 모듈에서는 .png만 등록가능 하도록 설정
+			**/
+			.config(function(extentionProvider){
+				extentionProvider.setExtention( '.png' );
+			})	
+
+			/**
+				예제는 기본 .jpg파일만 선택이 가능하다.
+
+				provider에 설정된 값을 기본으로 사용한다.
+				provider는 기본적으로 $get 함수를 필요로 하고
+				angular가 inject될때 $get을 호출한다.
+
+				provider값은 config에서만 변경이 가능하며
+				config에서 provider를 불러올때는 반드시 provider명+'Provider'로 불러와야 한다.
+			
+				config에서 불러온 provider는 $get의 상위 접근이 가능하다.
+			**/
+		</script>
+
+</body>
+</html>

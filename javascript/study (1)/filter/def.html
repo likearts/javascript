@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title> ng </title>
+	<script src="../angular.min.js"></script>
+	<style> *{ margin:0; padding:0; }</style>
+</head>
+<body ng-app="app">
+
+	<div vidoe>
+		<!-- 비디오 코드값으로 비디오 iframe을 적용해준다. -->
+		<div ng-bind-html="youtubeVideoUrl | applyViode : 'youtube' : {width:'100%',height:'200'}"></div>
+		<div ng-bind-html="videmoVideoUrl | applyViode : 'vimeo'"></div>
+	</div>
+	
+	<script>
+
+			angular.module('app',[])
+			.factory('videoApi',function(){
+				return function(scope){
+					scope.youtubeVideoUrl = "HQgZh-eGESw";
+					scope.videmoVideoUrl = "254335734";
+				}
+			})
+			.directive('vidoe',function(videoApi){
+				return videoApi; // directive 코드를 factory로 사용 할 수도 있다.
+			})
+			.filter('applyViode',function($sce){
+				return function( code, type, option ){
+					var videoTag = "";
+					if(!option) option = {};
+					switch(type){
+						case "youtube":
+							videoTag = "<iframe width='"+(option.width||'100%')+"' height='"+(option.height||'315')+"' src='https://www.youtube.com/embed/"+code+"?controls=0' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+						break;
+						case "vimeo":
+							videoTag = "<iframe width='"+(option.width||'100%')+"' height='"+(option.height||'315')+"' src='https://player.vimeo.com/video/"+code+"' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
+						break;
+					}
+					return $sce.trustAsHtml(videoTag);
+				}
+			})
+
+			/**
+				filter format은
+				값 | 필터명 : 파라미터
+			
+				filter가 실행되면 return function( 값, 파라미터 )로 넘어오게 되고
+				변경값 또는 format을 리턴 하면 된다.
+			**/
+				
+	</script>
+</body>
+</html>

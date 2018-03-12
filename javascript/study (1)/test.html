@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-app="app">
+    <script>
+        angular.module('app',[])
+        .run(function($http,$httpParamSerializerJQLike){
+            $http.get('', $httpParamSerializerJQLike({ u:1, a:0 }) )
+        })
+        .config(function ($httpProvider, $provide) {
+            $provide.factory('httpInterceptor', function ($q, $rootScope) {
+                return {
+                    'request': function (config) {
+                        // intercept and change config: e.g. change the URL
+                        // config.url += '?nocache=' + (new Date()).getTime();
+                        // broadcasting 'httpRequest' event
+                        $rootScope.$broadcast('httpRequest', config);
+                        console.log(config);
+                        return config || $q.when(config);
+                    },
+                    'response': function (response) {
+                        // we can intercept and change response here...
+                        // broadcasting 'httpResponse' event
+                        $rootScope.$broadcast('httpResponse', response);
+                        return response || $q.when(response);
+                    },
+                    'requestError': function (rejection) {
+                        // broadcasting 'httpRequestError' event
+                        $rootScope.$broadcast('httpRequestError', rejection);
+                        return $q.reject(rejection);
+                    },
+                    'responseError': function (rejection) {
+                        // broadcasting 'httpResponseError' event
+                        $rootScope.$broadcast('httpResponseError', rejection);
+                        return $q.reject(rejection);
+                    }
+                };
+            });
+            $httpProvider.interceptors.push('httpInterceptor');
+        });
+    </script>
+</body>
+</html>
