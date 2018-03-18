@@ -1,0 +1,55 @@
+<div class="planshop_list_wrap"
+     ng-if="!visiblity&&planShopData.length" ng-class="{single:planShopData.length==1}">
+    <div class="swiper">
+        <ul
+            hw-swipe
+            swipe-index="planshopSwpIdx"
+            swipe-total="planshopTotal">
+            <!-- 최대 15개 -->
+            <li ng-repeat="item in planShopData | limitTo:15" idx="{{$index}}">
+                <div class="search_planshop_swipe_unit" ng-click="planProductsLink(item)">
+                    <div class="image">
+                        <figure><img ng-src="{{item.img_url}}" alt=""/></figure>
+                        <div class="flags flag" ng-if="item.isGiftPkg || item.dlv_fee_tp=='Y'||item.isdlex_free || item.is_dept || item.is_tvhome || item.is_himart || item.smartpick_yn=='Y'||item.issmart_pick || item.isDlvQuick || item.isDlvToday">
+                            <span class="flag depart" ng-show="item.flag=='D'||item.is_dept">롯데백화점</span>
+                            <span class="flag etv" ng-if="item.is_tvhome && !item.is_dept">롯데홈쇼핑</span>
+                            <span class="flag himart" ng-if="item.is_himart && !item.is_dept && !item.is_etv">하이마트</span>
+                            <span class="flag depart qk_free" ng-if="item.dlv_fee_tp=='Y'||item.isdlex_free">무료배송</span>
+                            <span class="flag depart gift_package" ng-if="item.isGiftPkg">선물포장</span>
+                            <span class="flag smart" ng-show="item.smartpick_yn=='Y'||item.issmart_pick">스마트픽</span>
+                            <!--span ng-if="rScope.showQuick" class="flag normal" ng-show="item.isDlvQuick">퀵</span-->
+                            <!--span class="flag normal" ng-show="item.isDlvToday">오늘도착</span!-->
+                        </div>
+                        <div class="floating_flags">
+                            <!-- L.Point flag -->
+                            <span class="lpoint_icon" ng-if="item.save_lpoint">
+                                <img ng-src="http://image.lotte.com/lotte/images/mobile/MO_lpoint_logo.png">
+                            </span>
+                            <!-- 명절 -->
+                            <!--span ng-if="item.goods_nm.indexOf('[설]') > -1 || item.isHoliday" class="holiday_flag">명절상품</span-->
+                        </div>
+                    </div>
+                    <div class="goods_info">
+                        <span class="goods_name">
+                            {{item.brnd_nm?"["+item.brnd_nm+"]":""}}{{item.goods_nm}}
+                        </span>
+                        <div class="info_detail">
+                            <span class="goods_price">
+                                {{(item.discounted_price||item.original_price ) | number }}
+                            </span>
+                            <span class="promotion_flag" ng-if="item.is_sale_promotion">~</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_list_more" ng-if="$index==14" ng-click="more()">
+                    <div class="more_active_button">
+                        <p>모두<br/>보기</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="planshop_prod_list_indicator" ng-if="planshopTotal>1">
+            <span><b>{{planshopSwpIdx+1}}</b>/{{planshopTotal}}</span>
+        </div>
+    </div>
+</div>
