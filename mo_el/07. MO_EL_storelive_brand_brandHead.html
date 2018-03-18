@@ -1,0 +1,22 @@
+<div class="store_live_brand_head">
+    <div
+        class="header_bg"
+        style="background:#fff url('{{shop_detail.shop_mast_img_path_nm}}') center center no-repeat !important">
+        <span class="brand_floating_icon" ng-click="brandListOpen()">
+            <img
+                ng-src="http://image.lotte.com/ellotte/mo2015/angular/mall/store_live_icon_brand_float_bleat.png"
+                alt=""/>
+        </span>
+    </div>
+    <div class="manager_profile"
+         ng-if="shop_detail.shop_aemp_seq">
+        <figure
+            style="background:#fff url('{{shop_detail.shop_aemp_img_path_nm}}') center top no-repeat !important; background-size: 100% auto !important;">
+            <span class="wish" ng-click="sMaserkLike()" ng-class="{active:sMaserkLikeState}"></span>
+        </figure>
+        <div class="fan">
+            FAN <em>{{shop_detail.shop_aemp_rgl_cust_cnt}}</em>
+        </div>
+    </div>
+    <div ng-class="{noManager:!shop_detail.shop_aemp_seq}"></div>
+</div>

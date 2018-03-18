@@ -1,0 +1,71 @@
+<div
+	class='md_tip items_block bg_white'
+	ng-if='alias.mdTip.data&&alias.mdTip.data.length'>
+	<div
+		class='md_tip_group'
+		ng-repeat='group in alias.mdTip.data'>
+		<h5
+		 		class='bg_white'
+		  	ng-click="randingURL(group.text.link_url,'',{curDispNo:tclickCode})"
+				ng-bind-html="(group.text.img_ur?'<img src=group.text.img_url/>':null)||group.text.banner_nm">
+		 </h5>
+		 <div
+		  class='md_tip_item'
+		 	ng-class='{no_border:$index==0}'
+			ng-repeat="item in group.goods_list"
+			ng-init="tcnt=($index+1)<10?'0'+($index+1):($index+1)">
+			 <!-- 홀수 -->
+			 	<div
+					class='table per100'
+					ng-if="$index%2==0"
+					ng-click="randingURL(item.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_Clk_Prd_M{{tcnt}}',{curDispNo:tclickCode})">
+						<div class='cell thumb'>
+							<img ng-src="{{item.img_url}}" alt="{{item.brnd_nm}}"/>
+						</div>
+						<div class='cell cont'>
+								<div class='cont_head'>
+									<span class='disp_in_block'>MD TIP</span>
+								</div>
+								<div class='cont_body'>
+									<span>{{item.promotion_text}}</span>
+									<p>[{{item.brnd_nm}}]</p>
+									<em>{{item.goods_nm}}</em>
+								</div>
+								<div class='cont_foot'>
+									<span class='price_color'>
+										{{(item.discounted_price||item.price2)|number}}<em>원</em>
+									</span>
+								</div>
+						</div>
+				</div>
+				<!-- 짝수 -->
+				<div
+					class='table per100'
+					ng-if="$index%2==1"
+					ng-click="randingURL(item.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_Clk_Prd_M{{tcnt}}',{curDispNo:tclickCode})">
+					<div class='cell cont'>
+							<div class='cont_head'>
+								<span class='disp_in_block'>MD TIP</span>
+							</div>
+							<div class='cont_body'>
+								<span>{{item.promotion_text}}</span>
+								<p>[{{item.brnd_nm}}]</p>
+								<em>{{item.goods_nm}}</em>
+							</div>
+							<div class='cont_foot'>
+								<span class='price_color disp_in_block'>
+									{{(item.discounted_price||item.price2)|number}}<em>원</em>
+								</span>
+							</div>
+					</div>
+					<div class='cell t_right thumb'>
+						<figure>
+							<img ng-src="{{item.img_url}}" alt="{{item.brnd_nm}}"/>
+						</figure>
+					</div>
+			</div>
+		</div>
+		<!--//md_tip_item-->
+	</div>
+	<!--//md_tip_group-->
+</div>

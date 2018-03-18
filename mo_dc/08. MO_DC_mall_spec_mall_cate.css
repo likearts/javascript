@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*빅사*/ #head_sub h2.spec5550543 span span,
+/*케이*/ #head_sub h2.spec5535841 span span,
+/*두피*/ #head_sub h2.spec5569995 span span,
+/*티비*/ #head_sub h2.spec5565610 span span,
+/*셔츠*/ #head_sub h2.spec5557917 span span,
+/*특맛*/ #head_sub h2.spec5558814 span span,
+/*쌤소*/ #head_sub h2.spec5571254 span span,
+/*브라이튼몰*/ #head_sub h2.spec5578740 span span,
+/*미펠*/ #head_sub h2.spec5593416 span span
+{width:120px;height:25px;margin:0 auto;position:relative;top:5px;text-indent:-999px;
+	/*background:url(http://image.lotte.com/lotte/mo2015/angular/mall/specMallLogo_1711.png) no-repeat 0 0;background-size:120px auto;*/}
+/*빅사*/ #head_sub h2.spec5550543 span span{background-position:0 0;}
+/*케이*/ #head_sub h2.spec5535841 span span{background-position:0 -25px;}
+/*두피*/ #head_sub h2.spec5569995 span span{background-position:0 -50px;}
+/*티비*/ #head_sub h2.spec5565610 span span{background-position:0 -75px;}
+/*셔츠*/ #head_sub h2.spec5557917 span span{background-position:0 -100px;}
+/*특맛*/ #head_sub h2.spec5558814 span span{background-position:0 -125px;}
+/*쌤소*/ #head_sub h2.spec5571254 span span{background-position:0 -150px;}
+/*브라이튼몰*/ #head_sub h2.spec5578740 span span{background-position: 0 -179px;}
+/*미펠*/ #head_sub h2.spec5593416 span span{background-position: 0 -203px;}
+
+#head_sub h2 a.noAfter{color:#333 !important;}
+
+.smcCateContainer{position:relative;background-color:#fff;}
+.smcCateMain:after{content:"";display:block;height:10px;background-color:#ebebeb;}
+
+/* 리스트 타입 */
+.smcListType ul:after{content:"";display:block;height:0;clear:both;}
+.smcListType li{width:50%;float:left;}
+.smcListType li a{display:block;height:40px;line-height:40px;text-align:center;border-bottom:1px solid #e0e0e0;}
+.smcListType li:nth-child(odd) a{border-right:1px solid #e0e0e0;}
+.smcListType li.more a:before{content:"+";margin-right:2px;}
+.smcListType:after{content:"";display:block;height:1px;background-color:#e0e0e0;position:absolute;left:0;bottom:0;width:100%;}
+
+/* 아이콘 타입 */
+.smcIconType{margin:0 5px;text-align:center;position:relative;}
+.smcIconType ul{display:inline-block;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
+.smcIconType li{display:inline-block;padding:0 5px;box-sizing:border-box;}
+.smcIconType li a{display:block;width:100%;}
+.smcIconType li a span{display:block;}
+.smcIconType li a .img{background-repeat:no-repeat;background-position:50% 50%;background-size:cover;padding-top:86.1%;}
+.smcIconType li a .txt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;height:24px;line-height:20px;margin:0 2px;}
+.smcIconType li:first-child{margin-left:0;}
+.smcIconType li:last-child{margin-right:0;}
+.smcIconType.cnt2 ul, .smcIconType.cnt3 ul{width:100% !important;}
+.smcIconType.cnt2 a, .smcIconType.cnt3 a{margin:0 auto;}
+.smcIconType.cnt2 li{width:50%;box-sizing:border-box;}
+.smcIconType.cnt3 li{width:33%;box-sizing:border-box;}
+/* @media screen and (min-width:375px) {
+	.smcIconType.cnt4 ul,
+	.smcIconType.cnt5 ul,
+	.smcIconType.cnt6 ul{width:100% !important;}
+	.smcIconType.cnt4 li{width:25%;box-sizing:border-box;}
+	.smcIconType.cnt5 li{width:20%;box-sizing:border-box;}
+	.smcIconType.cnt6 li{width:16%;box-sizing:border-box;}
+	.smcIconType.cnt4 a,
+	.smcIconType.cnt5 a,
+	.smcIconType.cnt6 a{margin:0 auto;}
+} */
+/* .smcIconType:after{content:"";display:block;position:absolute;top:0;right:-5px;width:45px;height:100%;pointer-events:none;z-index:10;
+	background:url(http://image.lotte.com/lotte/mo2015/angular/mall/specMall_kshop_iconCover.png) no-repeat 100% 50%;background-size:auto 100%;
+	opacity:0;-webkit-transition:opacity 0.3s;transition:opacity 0.3s;}
+.smcIconType:before{content:"";display:block;position:absolute;top:0;left:-5px;width:45px;height:100%;pointer-events:none;z-index:10;
+	background:url(http://image.lotte.com/lotte/mo2015/angular/mall/specMall_kshop_iconCover.png) no-repeat 100% 50%;background-size:auto 100%;
+	opacity:0;-webkit-transition:opacity 0.3s;transition:opacity 0.3s;-webkit-transform:rotate(180deg);transform:rotate(180deg);}
+.smcIconType.right:after{opacity:1;}
+.smcIconType.left:before{opacity:1;} */
+
+/* sub */
+.smcSubCate{background-color:#f6f6f6;border-bottom:1px solid #f6f6f6;}
+.smcSubCate .smcNavigator{padding:10px;}
+.smcSubCate .smcNavigator .navi{display:inline-block;margin-left:10px;position:relative;}
+.smcSubCate .smcNavigator .navi a{display:inline-block;height:22px;line-height:22px;font-size:14px;position:relative;vertical-align:top;}
+.smcSubCate .smcNavigator .navi a span{display:inline-block;height:22px;line-height:22px;max-width:80px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;position:relative;vertical-align:top;}
+.smcSubCate .smcNavigator .navi ~ .navi{padding-left:15px;}
+.smcSubCate .smcNavigator .navi ~ .navi:before,
+.smcSubCate .smcNavigator .navi ~ .navi:after{content:"";display:block;width:6px;height:1px;background-color:#999;position:absolute;left:1px;top:9px;}
+.smcSubCate .smcNavigator .navi ~ .navi:before{-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+.smcSubCate .smcNavigator .navi ~ .navi:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);top:13px;}
+
+.smcSubCate .smcNavigator .navi a:after{content:"▼";display:none;font-size:10px;margin-left:2px;height:22px;line-height:24px;position:relative;vertical-align:top;}
+.smcSubCate .smcNavigator.open .navi a:after{content:"▲";}
+.smcSubCate .smcNavigator .navi:last-child a{color:#f38066;}
+.smcSubCate .smcNavigator .navi:last-child a:after{display:inline-block;}
+.smcSubCate .smcNavigator.open .navi:last-child a{color:#333;}
+.smcSubCate .smcNavigator.open .navi:last-child a:after{display:none;}
+.smcSubCate .smcNavigator.open.d0 .navi.d0 a,
+.smcSubCate .smcNavigator.open.d1 .navi.d1 a,
+.smcSubCate .smcNavigator.open.d2 .navi.d2 a{color:#f38066;}
+.smcSubCate .smcNavigator.open.d0 .navi.d0 a:after,
+.smcSubCate .smcNavigator.open.d1 .navi.d1 a:after,
+.smcSubCate .smcNavigator.open.d2 .navi.d2 a:after{display:inline-block;}
+
+.smcSubCate .smcSubNaviList{margin:0 8px;border:1px solid #e0e0e0;overflow:hidden;position:relative;max-height:200px;overflow:hidden;background-color:#fff;}
+.smcSubCate .smcSubNaviList ul{position:relative;}
+.smcSubCate .smcSubNaviList li{position:relative;}
+.smcSubCate .smcSubNaviList li a{position:relative;display:block;width:50%;float:left;height:40px;line-height:40px;box-sizing:border-box;padding-left:24px;font-size:14px;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
+.smcSubCate .smcSubNaviList li a:nth-child(odd):after{content:"";display:block;position:absolute;left:0;bottom:-1px;height:1px;width:200%;background-color:#f1f1f1;z-index:1;pointer-events:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
+.smcSubCate .smcSubNaviList li a.on{color:#f38066;}
+.smcSubCate .smcSubNaviList li:after{content:"";display:block;height:0;clear:both;}
+.smcSubCate .smcSubNaviIndi{margin:15px 8px;height:10px;position:relative;}
+.smcSubCate .smcSubNaviIndi ul{text-align:center;}
+.smcSubCate .smcSubNaviIndi li{position:relative;display:inline-block;width:10px;height:10px;margin:0 2px;position:relative;text-indent:-100px;overflow:hidden;vertical-align:top;}
+.smcSubCate .smcSubNaviIndi li:before{content:"";display:block;width:8px;height:8px;border-radius:4px;background-color:#7b7b7b;position:absolute;left:1px;top:1px;}
+.smcSubCate .smcSubNaviIndi li.on:before{background-color:#f38066;}
+.smcSubCate .smcSubNaviIndi a.close{display:block;position:absolute;height:20px;line-height:20px;top:-5px;right:7px;padding-right:17px;}
+.smcSubCate .smcSubNaviIndi a.close:before,
+.smcSubCate .smcSubNaviIndi a.close:after{content:"";display:block;width:14px;height:1px;background-color:#666;position:absolute;top:10px;right:0;}
+.smcSubCate .smcSubNaviIndi a.close:before{-webkit-transform:rotate(45deg);transform:rotate(45deg);}
+.smcSubCate .smcSubNaviIndi a.close:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);}

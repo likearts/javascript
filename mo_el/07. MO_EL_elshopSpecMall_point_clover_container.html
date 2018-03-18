@@ -1,0 +1,115 @@
+<section ng-show="contVisible" class="cont_minheight">
+	<section class="mylotte_point" ng-show="!isShowLoadingImage">
+		<div class="bg_white">
+			<!-- 클로버 내역 -->
+			<section class="clover_info">
+				<!-- 나의 총 클로버 -->
+				<div class="extinction_clover">
+					<p class="tot_clover">나의 총 클로버 <span><strong>{{maxData.useable_clover | number}}</strong>개</span></p>
+					<a ng-click="cloverLink()" class="tot_clover_link">클로버 안내</a>
+				</div>
+				<!-- // 나의 총 클로버 -->
+				<div ng-if="maxData.tobe_del_clover != 0" class="extinction_box">
+					<p class="extinction_count">30일 이내 소멸 예정 클로버 <strong>{{maxData.tobe_del_clover | number}}</strong>개</p>
+					<p class="desc">적립 클로버 중 사용하고 남은 잔여클로버만 소멸됩니다.</p>
+				</div>
+
+				<!--<div class="btn_areaC" ng-if="maxData.tobeDelCloverList.items.length == 0">
+					<a class="btn_style2s bi-mr disabled">상세보기</a>
+				</div>-->
+
+				<div class="btn_areaC" ng-if="maxData.tobeDelCloverList.items.length != 0">
+					<a ng-click="delCloverView()" class="btn_style2s bi-mr" ng-class="{on:!delCloverListViewFlag}">소멸예정내역 보기</a>
+				</div>
+
+				<!-- 소멸 예정 클로버 -->
+				<section class="point_list extinction" ng-if="delCloverListViewFlag == true">
+					<h3>소멸 예정 클로버 <span>(30일 이내)</span></h3>
+					<table id="tb_point_list" class="tbl_list_01" summary="상세내용, 소멸예정 포인트가 나와있는 표">
+						<caption>소멸예정 내역 상세 테이블</caption>
+						<colgroup>
+							<col width="65%">
+							<col width="35%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">상세내용</th>
+								<th scope="col">소멸예정</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="items in delCloverListData">
+								<td>
+									<span class="date" >{{items.occur_dtime | htmlRemove}}</span>
+									<p>{{items.mm_title}}</p>
+								</td>
+								<td class="point minus"><strong>-{{items.occur_amt}}</strong></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<!-- // 소멸 예정 클로버 -->
+
+			</section>
+
+			<!-- 포인트 적립.사용 내역 -->
+			<section class="point_list" ng-if="cloverListData.length != 0">
+				<h3>클로버 적립/사용 내역 <span>(최근 3개월간)</span></h3>
+				<table id="tb_point_list" class="tbl_list_01" summary="상세내용, 적립/사용 포인트가 나와있는 표">
+					<caption>L.POINT 적립/사용 내역 상세 테이블</caption>
+					<colgroup>
+						<col width="65%">
+						<col width="35%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">상세내용</th>
+							<th scope="col">적립/사용</th>
+						</tr>
+					</thead>
+					<tbody ng-repeat="items in cloverListData">
+						<tr>
+							<td>
+								<span class="date">{{items.occur_dtime | htmlRemove}}</span>
+								<p>{{items.mm_title}}</p>
+							</td>
+						<td ng-if="items.point_sign == '+'" class="point plus"><strong>+{{items.occur_amt | number}}</strong></td>
+						<td ng-if="items.point_sign == '-'" class="point minus"><strong>-{{items.occur_amt | number}}</strong></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<!-- // 포인트 적립.사용 내역 -->
+
+			<!-- 클로버 사용 내역 -->
+			<section class="point_list" ng-if="cloverListData.length == 0">
+				<h3>클로버 적립/사용 내역 <span>(최근 3개월간)</span></h3>
+				<p class="cont_no">적립/사용 내역이 없습니다.</p>
+			</section>
+			<!-- // 클로버 사용 내역 -->
+
+			<!-- 더보기 버튼 -->
+			<section class="more_view" ng-if="cloverListData.length != cloverPointList_tot_cnt">
+				<div><a href="#" ng-click="moreListClick()"><span><strong>더보기</strong> (<label id="currentCnt">{{cloverListData.length}}</label>/<label id="totalCnt">{{cloverPointList_tot_cnt}}</label>)</a></span></div>
+			</section>
+			<!--// 더보기 버튼 -->
+		</div>
+
+		<!-- 클로버 사용 안내 -->
+		<dl class="slideGuide" ng-click="depositViewClick1()" >
+			<dt >클로버 사용 안내</dt>
+			<dd ng-if="depositView1 == true">
+				<ul>
+				   <li>클로버는 롯데닷컴에서 제공하는 행운의 마일리지로써 구매 이외에 다양한 활동으로 쌓으실 수 있습니다.</li>
+				   <li>클로버와 교환하실 수 있는 쇼핑혜택<br/>할인쿠폰, 무료배송권, L-money와 교환</li>
+				   <li>쿠폰 사용기간 : 교환일로부터 1일 이내</li>
+				   <li>L-money 사용기간 : 교환일로부터 7일 이내</li>
+				</ul>
+			</dd>
+		</dl>
+	</section>
+    <div class="listLoading" ng-show="isShowLoadingImage" style="height:300px">
+    	<p class="noData"><p class="loading half"></p></p>
+    </div>
+	<!-- //클로버 -->
+</section>

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#head_sub h2 span span { color:transparent; text-indent: 0 !important; line-height: 25px; position:relative }
+#head_sub h2 span span.is_completed { color:#000 }
+.smcCateContainer { display:none }
+.result_wrap.cate_prod { margin-top:0px !important }
+h3 { font-size:16px; color:#333; padding:15px 10px }
+
+#head_sub h2 > span:first-child { vertical-align: top !important; position: relative }
+#head_sub h2 > span span {
+    position:absolute !important;
+    left:50% !important;
+    top:50% !important;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}

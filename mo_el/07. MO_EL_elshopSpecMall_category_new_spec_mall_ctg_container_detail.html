@@ -1,0 +1,143 @@
+<section
+    slshop-mall-category-fix="48"
+    ng-show="contVisible"
+    id="elshopSubHead"
+    ng-if="catData && catData.length > 0 && !elshopCateHide" class="elshop_category_list">
+
+     <style>
+     	.elshop_category_list .mall_cateLayerbar { background:none }
+        {{ "body #head_sub { background: "+headerBackBackgroundColor+" !important }" }}
+        {{ ".elshop_cate_bg_container, .sub_depth.depth3 li { background:"+(menuBackgroundColorMiddle||null)+"}"}}
+        {{ ".ksCA .ksMenuBox li span { color:"+(menuFontColorMiddle || null)+"}" }}
+        {{ ".shop_cat_sub .cat_button a { color:"+(menuFontColorSmall||null)+" !important}" }}
+        {{ ".sub_cat_list_container, .ksCA .ksMenuBox li.on span { background:"+(menuBackgroundColorSmall||null)+"}" }}
+        {{ ".ksCA .ksMenuBox li.on span { color:"+menuMouseOnColor+"}" }}
+        {{ ".shop_cat_sub .sub_list .cat_button.useSub.active a { color:"+menuMouseOnColor+" !important }"}}
+    </style>
+    
+    <div class='elshop_cate_bg_container'>
+        <!-- category menu -->
+        <div class="cateArea">
+    	    <div class="ksCA">
+                <ul class="ksMenuBox"
+                    ng-if="BasicData.disp_no=='5577219'"
+                    id="elsAmenu"
+                    elshop-category-slide
+                    slide-space="3"
+                    item-active-class='active'>
+      	            <li
+                          ng-repeat="item in catData"
+                          ng-class="{on:elshopCate.useCatinfo.depth1 == $index}"
+                          ng-click="randingURL(item.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_header_cate')">
+                          <span>{{item.disp_nm}}</span>
+                      </li>
+      	        </ul>
+    	        <ul class="ksMenuBox"
+                ng-if="BasicData.disp_no!='5577219'"
+                  id="elsAmenu"
+                  elshop-category-slide
+                  slide-space="3"
+                  item-active-class='active'>
+    	            <li
+                        ng-repeat="item in catData"
+                        ng-class="{on:elshopCate.useCatinfo.depth1 == $index}"
+                        ng-click="item.sub_cate_list.length?openCatList({depth1:$index},1):randingURL(item.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_header_cate')">
+                        <span>{{item.disp_nm}}</span>
+                    </li>
+    	        </ul>
+    	    </div>
+
+          <!-- depth1 more -->
+          <div class="big_cate_all" ng-if="catData.length > 4">
+      				<!--button class="open_btn" ng-class="{on:elshopCate.showAllCategory}" ng-click="showAllCategoryClick()">더보기</button-->
+      				<div ng-show="elshopCate.showAllCategory" ng-class="{scroll:ctgData.length > 14}">
+      					<ul>
+      						<li
+                            ng-repeat="item in catData"
+                            ng-class="{on:elshopCate.curCtgIdx == $index}"
+                            ng-click="item.sub_cate_list.length?subCtgClick($index):randingURL(item.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_header_cate')"><span>{{item.disp_nm}}</span>
+                  </li>
+      					</ul>
+      					<div class="mall_cateLayerbar">
+      			        	<a ng-click="showAllCategoryClick()" class="close">닫기</a>
+      			        </div>
+      				</div>
+      			</div>
+      	</div>
+
+        <!--sub category-->
+        <div ng-if="catData[elshopCate.useCatinfo.depth1]!=null">
+            <div class='sub_cat_list_container'  style='{{categoryOpenBackground||""}}'>
+                <div
+                    class="shop_cat_sub clear"
+                    ng-repeat="item in catData[elshopCate.useCatinfo.depth1].sub_cate_list"
+                    ng-init="groupIndex=$index">
+                    <!-- 2depth -->
+                    <div
+                        class="sub_depth clear"
+                        ng-class="{scroll:item.sub_cate_list.length > 6}">
+                            <nav
+                                class="sub_list"
+                                ng-init="firstCat=catData[elshopCate.useCatinfo.depth1]"
+                                ng-repeat="bitem in item.s">
+                                <div
+                                    class="bca cat_button"
+                                    ng-init="acnt=(elshopCate.useCatinfo.depth1+1)<10?
+                                    '0'+(elshopCate.useCatinfo.depth1+1):(elshopCate.useCatinfo.depth1+1);
+                                    bcnt=(bitem.depthIndex+1)<10?
+                                    '0'+(bitem.depthIndex+1):(bitem.depthIndex+1)"
+                                    ng-class="{
+                                        bleat:bitem.sub_cate_list.length,
+                                        useSub:bitem.sub_cate_list.length,
+                                        active:elshopCate.useCatinfo.depth2==bitem.depthIndex
+                                    }">
+                                    <a
+                                        ng-init="catClickData={
+                                            depth1:elshopCate.useCatinfo.depth1,
+                                            depth2:bitem.depthIndex,
+                                            depth3:$index,
+                                            groupIndex:bitem.groupIndex
+                                        }"
+                                        ng-click="bitem.sub_cate_list.length?openCatList(catClickData,2):randingURL(bitem.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_CateList_Clk_{{acnt}}_{{bcnt}}',{upCurDispNo:firstCat.disp_no,curDispNo:item.disp_no})">
+                                        <div><var>{{bitem.disp_nm}}</var></div>
+                                    </a>
+                                </div>
+                            </nav>
+                    </div>
+                    <!-- 3depth -->
+                     <div
+                        class="sub_depth depth3"
+                        ng-if="groupIndex==elshopCate.useCatinfo.groupIndex&&catData[elshopCate.useCatinfo.depth1].sub_cate_list[elshopCate.useCatinfo.groupIndex].s[elshopCate.useCatinfo.depth3].sub_cate_list&&elshopCate.useCatinfo.depth2!=null"
+                        ng-init="acnt=(elshopCate.useCatinfo.depth1+1)<10?
+                        '0'+(elshopCate.useCatinfo.depth1+1):(elshopCate.useCatinfo.depth1+1);
+                        bcnt=(elshopCate.useCatinfo.depth2+1)<10?
+                        '0'+(elshopCate.useCatinfo.depth2+1):(elshopCate.useCatinfo.depth2+1)">
+                        <ul class='clear' ng-init="catelen=catData[elshopCate.useCatinfo.depth1].sub_cate_list[elshopCate.useCatinfo.groupIndex].s[elshopCate.useCatinfo.depth3].sub_cate_list.length">
+                           <!--li ng-init="parentCat=catData[elshopCate.useCatinfo.depth1];thisAll=catData[elshopCate.useCatinfo.depth1].sub_cate_list[elshopCate.useCatinfo.groupIndex].s[elshopCate.useCatinfo.depth3]">
+                             <a
+                                 ng-click="randingURL(thisAll.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_CateList_Clk_{{acnt}}_{{bcnt}}',{upCurDispNo:parentCat.disp_no,curDispNo:thisAll.disp_no})"
+                                 class=''>
+                                 <span>전체보기</span>
+                             </a>
+                           </li-->
+                            <li
+                                ng-init="firstCat=catData[elshopCate.useCatinfo.depth1];parentCat=catData[elshopCate.useCatinfo.depth1].sub_cate_list[elshopCate.useCatinfo.groupIndex].s[elshopCate.useCatinfo.depth3]"
+                                ng-repeat="citem in catData[elshopCate.useCatinfo.depth1].sub_cate_list[elshopCate.useCatinfo.groupIndex].s[elshopCate.useCatinfo.depth3].sub_cate_list"
+                                ng-class="{single:$index==0,block_wide:($index==catelen-1&&catelen%2==0)}">
+                                <a
+                                    ng-click="randingURL(citem.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_CateList_Clk_{{acnt}}_{{bcnt}}',{firstDispNo:firstCat.disp_no,upCurDispNo:parentCat.disp_no, curDispNo:citem.disp_no})"
+                                    class=''>
+                                    <span>{{citem.disp_nm}} </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mall_cateLayerbar">
+                <a ng-click="closeCatList()" class="close">닫기</a>
+            </div>
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,217 @@
+/*
+       ##############################
+       ※ 백화점  라이브  전용 ( store live ) ※
+       @author :  박해원
+       @date : 20170904
+       @last-modify :
+       ##############################
+   */
+
+(function(window, angular, undefined) {
+    'use strict';
+
+    var app = angular.module('app', [
+        'lotteComm',
+        'lotteSrh',
+        'lotteSideCtg',
+        'lotteSideMylotte',
+        'lotteCommFooter',
+        'storeliveComm',
+        'lotteNgSwipe',
+        'lotteSns'
+    ]);
+
+    app.controller('storeLiveCtrl', ['$rootScope','$scope', 'LotteCommon', 'storeliveApi', 'commInitData', 'storeliveService', '$timeout',
+        function($rootScope, $scope, LotteCommon, storeliveApi, commInitData, storeliveService, $timeout ) {
+        $scope.showWrap = true;
+        $scope.contVisible = true;
+        $scope.subTitle = "백화점 라이브"; //서브헤더 타이틀
+        $scope.prdComment = "상품명";
+
+        $scope.tClickBase = "";
+
+        storeliveService.Observers.category.set({disp_no:commInitData.query.cate_no});
+        storeliveService.setProductKeyName( 'sub' );
+        storeliveApi( {
+            url : LotteCommon.storliveSubMainData,
+            data : commInitData.query,
+            dataName :'baseData'
+        }).then(function(res){
+            console.log(res);
+        },function(er){
+            console.log( '데이터 로드 에러' );
+        });
+
+    }]);
+
+    app.directive('lotteContainer', [function(LotteCommon, storeliveService) {
+        return {
+            templateUrl : '/ellotte/resources_dev/mall/storelive/storelive_container.html',
+            link : function( scope ) {
+                var sub_header = angular.element("#head_sub").scope(),
+                    shead = angular.element("#head_sub"),
+                    body = angular.element("body");
+                sub_header.$watch( 'sub_head_fix_is', function(v){
+                   v ? shead.addClass('sub_head_fix') : shead.removeClass('sub_head_fix');
+                   v ? body.addClass('fix_body_contents') : body.removeClass('fix_body_contents');
+                });
+
+            }
+        }
+    }]);
+
+    app.directive( 'subDetailHeader', [ 'storeliveService', 'goodsWish', 'storeliveTiclick', 'productLink', 'LotteCommon',
+        function(storeliveService, goodsWish, storeliveTiclick, productLink, LotteCommon){
+        return {
+            restrict:'E',
+            controller : 'utilsCtrl',
+            templateUrl : '/ellotte/resources_dev/mall/storelive/sub/sub_head.html',
+            scope:{},
+            link : function( scope, el, attrs, ctrl ) {
+                var head_h = angular.element('#head')[0].clientHeight,
+                    foot_h = angular.element('#lotteActionbar')[0].clientHeight;
+
+                storeliveService.watcher().$watch( storeliveService.observerStoreData(), function(res){
+                    if(!res) return;
+                    console.log( '[subDetailHeader] initData', res );
+                    scope.sub_head_data = res.sub_top.goods_detail;
+                    scope.goods_img_list = res.sub_top.goods_img_list.items;
+                    scope.shop_kakao = res.sub_top.shop_detail.sns_shop_url_addr;
+                    scope.shopTel = res.sub_top.shop_detail.shop_ctfc_no;
+                    scope.tclickCode = "m_Ek_ekDeptLive_Brd_prd_"+scope.sub_head_data.goods_no+"_Clk_Shr";
+                    scope.kakaoPlusFriendUrl = res.sub_top.shop_detail.sns_shop_url_addr;
+                    getScope().subTitle = scope.sub_head_data.brnd_nm;
+                    resizeHeadContainer();
+
+                    // 서브헤더 클릭시 링크 -> 브랜드메인으로
+                    angular.element("#head_sub > h2").bind('click',function(){
+                        window.location.href = LotteCommon.storeLiveSubURL+"?"+baseParam+"&elliv_shop_sn="+scope.sub_head_data.elliv_shop_sn+"&tclick="+storeliveTiclick.brand_name;
+                    });
+                });
+
+                angular.element(window).bind( 'resize', function(e){
+                    resizeHeadContainer();
+                });
+
+                scope.swipeIndex = 0;
+                scope.siwpeEnd = function(index){
+                    scope.swipeIndex = index;
+                }
+
+                scope.wishSaved = false;
+                scope.addWish = function() {
+                    if(scope.wishSaved){
+                        alert( '이미 추가되었습니다.');
+                        return;
+                    }
+                    goodsWish( scope.sub_head_data, scope ).then(function(res){
+                        console.log( 'success', res );
+                        scope.wishSaved = true;
+                        getScope().sendTclick( storeliveTiclick.sub_base +"_"+ scope.sub_head_data.goods_no +"_Clk_Wsh" );
+                    },function(err){
+                        console.log( 'error', err );
+                    });
+                }
+
+                // 전화문의
+                scope.called = function(){
+                    getScope().sendTclick( storeliveTiclick.base + "Brd_prd_" + scope.sub_head_data.goods_no + "_Clk_Btn_2" );
+                    window.location.href="tel:"+scope.shopTel;
+                }
+
+                // 상품상세로 :: 상세유입코드(curDispNoSctCd 97, curDispNo는 운영서버용
+                scope.productView = function(){
+                    productLink.ProdLink( {
+                        goods_no : scope.sub_head_data.goods_no,
+                        tclick : storeliveTiclick.base+"Brd_prd_"+scope.sub_head_data.goods_no+"_Clk_Btn_1&curDispNoSctCd=97&curDispNo="+storeliveTiclick.disp_no
+                    },'goods' );
+                }
+
+                // 톡상담
+                scope.csTalk = function() {
+                    if(!scope.kakaoPlusFriendUrl) return;
+                    getScope().sendTclick( storeliveTiclick.sub_talk + scope.sub_head_data.elliv_shop_sn );
+                    window.location.href = scope.kakaoPlusFriendUrl;
+                }
+
+                // 브랜드 목록 열기
+                scope.brandListOpen = function(){
+                    storeliveService.Observers.brandListState.set(true);
+                }
+
+                function resizeHeadContainer(){
+                    scope.head_img_height = resize().height-(head_h+foot_h);
+                }
+                function resize() {
+                    return { width: window.innerWidth, height: window.innerHeight };
+                }
+            }
+        }
+    }]);
+
+    app.directive( 'subShopInfo', [ 'storeliveService', 'storeliveTiclick', 'productLink',
+        function(storeliveService, storeliveTiclick, productLink ){
+        return {
+            restrict:'E',
+            templateUrl : '/ellotte/resources_dev/mall/storelive/sub/sub_shop_info.html',
+            controller : 'utilsCtrl',
+            scope:{},
+            link : function( scope ) {
+                storeliveService.watcher().$watch( storeliveService.observerStoreData(), function(res){
+                    if(!res) return;
+                    scope.shop_detail = res.sub_top.shop_detail;
+                    scope.goods_no = res.sub_top.goods_detail.goods_no;
+                });
+                scope.shopWishState = false;
+                scope.addShop = function() {
+                    if(scope.shopWishState){
+                        alert( '이미 추가되었습니다.' );
+                        return;
+                    }
+                    scope.storeWish( scope.shop_detail ).then(function(res){
+                        console.log(res);
+                        scope.shopWishState = true;
+                    },function(err) {
+                        console.log(err);
+                    });
+                };
+                scope.goShop = function(){
+                    var item = scope.shop_detail;
+                    // 매장 티클릭
+                    productLink.ProdLink( {
+                        elliv_shop_sn : item.elliv_shop_sn,
+                        tclick : storeliveTiclick.brand_name
+                    }, "shop_rnk" );
+                }
+                // 매장 전화연결
+                scope.called = function(){
+                    if(!scope.shop_detail.shop_ctfc_no ) return;
+                    getScope().sendTclick( storeliveTiclick.base + "Brd_prd_" + scope.goods_no + "_Clk_Btn_2" );
+                    window.location.href="tel:"+scope.shop_detail.shop_ctfc_no;
+                }
+            }
+        }
+    }]);
+
+    app.directive( 'subShopCategoryTags', [ 'storeliveService', 'storeliveTiclick', 'LotteCommon',
+        function( storeliveService, storeliveTiclick, LotteCommon ){
+        return {
+            restrict:'E',
+            templateUrl : '/ellotte/resources_dev/mall/storelive/sub/sub_category_tags.html',
+            scope:{},
+            link : function( scope ) {
+                storeliveService.watcher().$watch( storeliveService.observerStoreData(), function(res){
+                    if(!res) return;
+                    scope.tags = res.sub_top.category_tag_list.items;
+                    console.log(scope.tags, res );
+                });
+                scope.themeData = function( index ){
+                    var tc = storeliveTiclick.base+"_Kwd_"+storeliveService.Observers.category.getValue().disp_no+"_prd_"+scope.tags[index].tag_sn;
+                    var url = LotteCommon.mainUrl+"?"+baseParam+"&dispNo="+storeliveService.dispNo()+"&tag_sn="+scope.tags[index].tag_sn;
+                    window.location.href = url+"&"+tc;
+                }
+            }
+        }
+    }]);
+
+})(window, window.angular);

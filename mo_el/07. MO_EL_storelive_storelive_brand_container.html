@@ -1,0 +1,16 @@
+<section ng-show="contVisible" class="cont_minheight store_live_brand store_live_sub">
+    <!-- 브랜드메인 상단 -->
+    <brand-header></brand-header>
+    <!-- 매장정보 ( 서브, 브랜드메인 공통 ) -->
+    <sub-shop-info></sub-shop-info>
+    <!-- 카카오 매장연결 -->
+    <talk-contact></talk-contact>
+    <!-- 카테고리 -->
+    <store-live-shop-category action="categoryClick"></store-live-shop-category>
+    <!-- 상품목록 -->
+    <store-live-product-list template-type="storeLive01" storelive-data="storeliveData"></store-live-product-list>
+    <!-- 브랜드 리스트 -->
+    <store-live-brand-list></store-live-brand-list>
+    <!-- 로딩 -->
+    <store-live-page-loading></store-live-page-loading>
+</section>

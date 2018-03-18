@@ -1,0 +1,36 @@
+ <div
+  elshop-notice
+  class='notice_banner '
+  ng-if="alias.notice.data.length">
+    <div class='notice_container'>
+      <div class='table per100'>
+          <span class='cell v_middle notice_title side'>Notice</span>
+          <div class='mask table per100'>
+            <ul
+              class='cell v_middle notice_cont'>
+              <li
+                class='table per100'
+                ng-click="noticeLink(alias.notice.data[alias.notice.swipeIndex].text.link_url,'EL_main_SpeDisp-{{tclickCode}}_Clk_Notice_',{curDispNo:tclickCode})">
+                <content class='cell v_middle'><b>{{alias.notice.data[alias.notice.swipeIndex].text.banner_nm}}</b></content>
+                <date class='cell v_middle t_center'>{{alias.notice.data[alias.notice.swipeIndex].text.disp_strt_dtime}} </date>
+              </li>
+            </ul>
+          </div>
+          <!--//='mask-->
+          <span class='cell v_middle notice_button side'>
+            <div class='table per100'>
+              <a
+                class='row v_middle t_center arrow up'
+                href='#;'
+                ng-click='chnageNotice("up")' ></a>
+              <a
+                class='row v_middle t_center arrow down'
+                href='#;'
+                ng-click='chnageNotice("down")'></a>
+            </div>
+          </span>
+      </div>
+      <!--//table-->
+    </div>
+    <!--//notice_container-->
+</div>

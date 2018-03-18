@@ -1,0 +1,62 @@
+<div
+	class='weekly_new hot_issue product_list items_block'
+	ng-if='alias.hotIssue.data&&alias.hotIssue.data.length'>
+	<h5
+	 	class='bg_white'
+	  	ng-click="randingURL(alias.hotIssue.title.link_url,'')"
+	  	ng-bind-html="(alias.hotIssue.title.img_url?'<img ng-src=alias.hotIssue.title.img_url/>':null)||alias.hotIssue.title.banner_nm">
+	 </h5>
+	 <div
+	 	class='item_group'
+	 	ng-repeat="group in alias.hotIssue.data">
+		 	<!-- Big -->
+		 <div
+		 	class='item_big'
+		 	ng-if="group.text.img_url"
+			ng-click="randingURL(group.text.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_Clk_Ban_C00',{curDispNo:tclickCode})">
+				<img ng-src='{{group.text.img_url}}' alt={{group.text.img_note}}''/>
+				<div class='big_plan_cont'>
+						<div class='big_plan_cont_innner t_center'>
+							<p>{{group.text.img_note}}</p>
+							<span class='disp_in_block' ng-bind-html="group.text.note_cont"></span>
+						</div>
+				</div>
+		 </div>
+		 <!-- List -->
+		 <div class='item_list'>
+ 	    <div
+ 	      class='item_group'
+ 	      roll-swipe-banner
+ 	      swipe-id="hotIssube"
+ 	      swipe-list-model="group.goods_list"
+ 	      getcontrol="alias.hotIssue.setControl"
+ 	      info="group.goods_list"
+ 	      endfnc="alias.hotIssue.endFunc"
+ 	      rolling="true"
+ 	      width320="3"
+ 	      width640="3"
+ 	      width900="3">
+ 	      <ul class='mask swipeBox'>
+ 	        <li ng-repeat="item in group.goods_list" ng-init="tcnt=($index+1)<10?'0'+($index+1):($index+1)">
+ 	          <div class='item_content_inner' ng-click="randingURL(item.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_Clk_Prd_C{{tcnt}}',{curDispNo:tclickCode})">
+ 	            <figure>
+ 	              <img ng-src="{{item.img_url}}"/>
+ 	            </figure>
+ 	            <div class='item_body'>
+ 	              <!--p>[{{item.brnd_nm}}]</p-->
+ 	              <span>{{item.goods_nm}}</span>
+ 	            </div>
+ 	            <div class='item_foot'>
+ 	              <em class='discount_color' ng-class='{kwon:item.original_price}'>{{item.original_price|number}}</em>
+ 	              <span class='kwon price_color'>{{(item.discounted_price|number)||item.price2}}</span>
+ 	            </div>
+ 	          </div>
+ 	        </li>
+ 	      </ul>
+ 	    </div>
+ 	    <!--//item_group-->
+ 	  </div>
+ 	  <!--//item_list-->
+	</div>
+	<!--//item_group-->
+</div>

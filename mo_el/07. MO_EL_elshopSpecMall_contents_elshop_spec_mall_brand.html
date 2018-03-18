@@ -1,0 +1,38 @@
+<div
+  class='BnnBlock'
+  ng-if='alias.brandBnn.data&&alias.brandBnn.data.length'>
+  <div class="BrandBnn" >
+
+      <div
+           ng-if="alias.brandBnn.data.length<3"
+            class='mask brand_plane_b item_brd_len{{alias.brandBnn.data.length}}'>
+            <ul class='mask swipeBox'>
+                <li ng-repeat="item in alias.brandBnn.data" ng-init="tcnt=($index+1)<10?'0'+($index+1):($index+1)">
+                    <a ng-click="randingURL(item.img.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_Swp_brands_{{tcnt}}',{curDispNo:tclickCode})">
+                      <img ng-src="{{item.img.img_url}}"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class='elshopbrand_swipe' ng-class='{brand_bold:alias.brandBnn.data.length==3}' elshop-brand-swipe v='3' ng-if="alias.brandBnn.data.length>=3">
+            <div class='brandBnn_swipe'>
+                <ul class='mask swipeBox clear'>
+                    <li ng-repeat="item in alias.brandBnn.data" ng-init="tcnt=($index+1)<10?'0'+($index+1):($index+1)">
+                        <a ng-click="randingURL(item.img.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_Swp_brands_{{tcnt}}',{curDispNo:tclickCode})">
+                          <img ng-src="{{item.img.img_url}}"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span ng-if="alias.brandBnn.data.length>3" class='btn arrow prev ic-map alpha6' ng-click='control.prev()'></span>
+            <span ng-if="alias.brandBnn.data.length>3" class='btn arrow next ic-map alpha6' ng-click='control.next()'></span>
+        </div>
+
+    </div>
+</div>
+
+<!-- 20171205 하드코딩 추가 -->
+<div ng-show="cornerHtml!= undefined||cornerHtml!=''" ng-bind-html="cornerHtml | toTrustedHtml" >	
+</div>
+<!-- //20171205 하드코딩 추가 -->

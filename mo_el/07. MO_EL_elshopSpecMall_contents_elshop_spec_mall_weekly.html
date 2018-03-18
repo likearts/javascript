@@ -1,0 +1,33 @@
+<div
+  ng-if='alias.newProduct.data.length'
+  ng-repeat='items in alias.newProduct.data'
+  class='weekly_new items_block auto_data product_list newProduct_type_0{{$index}}'>
+  <div class='product_inner' ng-if="items.text.banner_nm">
+	  <h5
+	  	ng-if="items.text.banner_nm"
+	    class='bg_white'
+	    ng-click="randingURL(alias.newProduct.title.link_url,'')"
+	    ng-bind-html="(items.text.img_url?'<img ng-src=items.text.img_url/>':null)||items.text.banner_nm">
+	  </h5>
+	  <div class='item_list slider_wrapper' ng-if="items.text.banner_nm">
+	    <div lotte-slider class='item_group  swipe_wrap'>
+	      <ul class='mask swipeBox' style="width:{{145*items.goods_list.length}}px">
+	        <li ng-repeat="item in items.goods_list" ng-init="tcnt=($index+1)<10?'0'+($index+1):($index+1)">
+	          <div class='item_content_inner' ng-click="randingURL(item.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_Clk_Prd1_N{{tcnt}}',{curDispNo:tclickCode})">
+	            <figure>
+	              <img ng-src="{{item.img_url}}"/>
+	            </figure>
+	            <div class='item_body'>
+	              <span>[{{item.brnd_nm}}]{{item.goods_nm}}</span>
+	            </div>
+	            <div class='item_foot'>
+	              <em class='discount_color' ng-class='{kwon:item.original_price}'>{{item.original_price?(item.original_price|number):""}}</em>
+	              <span class='kwon price_color black'>{{(item.discounted_price|number)||item.price2}}</span>
+	            </div>
+	          </div>
+	        </li>
+	      </ul>
+	    </div><!--//item_group-->
+    </div><!--//item_list-->
+  </div> <!-- //product_inner -->
+</div>

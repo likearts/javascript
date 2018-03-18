@@ -1,0 +1,252 @@
+<section
+  class='elshop_spec_mall cont_minheight'
+  ng-class='{curIsSub:!(screenData.goodsTotal == 0 && ! pageLoading)}'
+  ng-show="contVisible">
+
+  <!-- linemap -->
+  <div line-map class='linemap'>
+    <div class='table linemap_header'>
+        <div class='cell line_map_arrow' ng-repeat='item in lineMapData'>
+            <span
+              class='p_rel disp_in_block v_middle'
+              ng-class='{
+                arrow:lastDispNo==item.disp_no&&!lineMapOpendata.sub_cate_list_n.length,
+                active:curCnt==$index}'
+              ng-click='subCatOpenState($index)'>{{ item.cut_nm || (item.linemap_nm||item.disp_nm) }}</span>
+        </div>
+    </div>
+
+    <!-- sub_cat_list -->
+    <div style='width:100%;overflow:hidden'>
+        <div
+          class='mask sub_open_cat_list_wap'
+          ng-if="lineMapOpendata.sub_cate_list_n.length"
+          ng-controller="lotteNgSwipeCtrl">
+          <ul
+              lotte-ng-list-swipe
+              swipe-slide-item="true"
+              swipe-list-model="lineMapOpendata.sub_cate_list_n"
+              swipe-max-ratio="0.2"
+              swipe-min-distance="40"
+              swipe-autoheight="true"
+              swipe-id="swipeSubCategoryList"
+              class='clear swipeBox swipe_sub_cate'>
+                <li class='clear sub_cat_list'
+                    ng-repeat="subList in lineMapOpendata.sub_cate_list_n"
+                    ng-init="gIdx=$index">
+                    <dl class='clear'>
+                      <dd ng-repeat="item in subList">
+                          <a
+                            ng-init="cnt=( (gIdx*10+$index)+1 )<10?'0'+($index+1):( (gIdx*10+$index)+1);acnt=(curCnt+1)<10?'0'+(curCnt+1):(curCnt+1);dispNos[(curCnt>-1?curCnt:dispNos.length-1)]==item.disp_no?openSwipePosX(gIdx):null"
+                            ng-class='{active:dispNos[(curCnt>-1?curCnt:dispNos.length-1)]==item.disp_no}'
+                            ng-click="randingURL(item.link_url,'m_EL_main_SpeDisp-{{tclickCode}}_CateList_Clk_{{acnt}}_{{cnt}}')">{{item.disp_nm}}</a>
+                      </dd>
+                      <!-- 홀수일경우 -->
+                      <dd ng-if="subList.length%2==1"><a>　</a></dd>
+                  </dl>
+                </li>
+            </ul>
+            <ol class='category_indicator ' ng-if="lineMapOpendata.sub_cate_list_n.length>1">
+                <li
+                    class=''
+                    ng-repeat="subList in lineMapOpendata.sub_cate_list_n"
+                    ng-class="{active:$index==swipeIdx}"></li>
+            </ol>
+            <div class='sub_cat_list_foot t_right'>
+                <a ng-click="subCatOpenState({depth1:nulll})" class="close disp_in_block">
+                  닫기 <img ng-src="http://image.lotte.com/lotte/mobile/mobile_new/brandshop/btn_sub_cate_close.png" alt=''>
+                </a>
+            </div>
+        </div>
+        <!--//sub_cat_list-->
+    </div>
+
+  </div>
+  <!--//linemap-->
+
+  <!-- best item -->
+  <div class='best_item_container_wrap' ng-if="alias.bestItem.data&&alias.bestItem.data.length">
+    <div class='best_item_container' >
+      <div class='best_item'>
+        <h5>BEST ITEM</h5>
+        <div
+          ng-if="alias.bestItem.data&&alias.bestItem.data.length>1"
+          class='swipeContainer'
+          roll-swipe-banner
+          swipe-id="bestItem"
+          info="alias.bestItem.data"
+          getcontrol="alias.bestItem.setControl"
+          endfnc="alias.bestItem.endFunc"
+          rolling="true"
+          width320="1"
+          width640="1"
+          width900="1">
+          <ul class='mask swipeBox'>
+            <li ng-repeat='item in alias.bestItem.data'>
+              <div class='item_container' ng-click="bestItemLink(item,$index)">
+                <div class='item_inner t_center'>
+                  <figure
+                    class='t_center disp_in_block'
+                    title='{{item.goods_nm}}'
+                    style='background:url({{item.img_url}}) center center no-repeat'>
+                  </figure>
+                  <div class='table per100 item_cont'>
+                      <div class='cell coupon t_center v_middle'>
+                          <span class='smart_pic' ng-if="item.smartpick_yn=='Y'"></span>
+                          <span class='sale_rate' ng-if="item.sale_rate">
+                            {{item.sale_rate}}<b>%</b>
+                            <em>쿠폰포함</em>
+                          </span>
+                      </div>
+                      <div class='cell item_desc t_left'>
+                          <p class='brnNm'>{{item.brnd_nm}}</p>
+                          <p class='subject'>{{item.goods_nm}}</p>
+                          <span class='kwon price_color' ng-class='{promotionDealItem:item.is_sale_promotion}'>
+                              {{(item.discounted_price||item.price2)|number}}
+                          </span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class='swipeContainer singleForm' ng-if="alias.bestItem.data&&alias.bestItem.data.length==1">
+          <ul class='mask swipeBox'>
+            <li ng-repeat='item in alias.bestItem.data'>
+              <div class='item_container' ng-click="bestItemLink(item,$index)">
+                <div class='item_inner t_center'>
+                  <figure class='t_center disp_in_block'>
+                    <img ng-src='{{item.img_url}}' alt='{{item.goods_nm}}'/>
+                  </figure>
+                  <div class='table per100 item_cont'>
+                      <div class='cell coupon t_center v_middle'>
+                          <span class='smart_pic' ng-if="item.smartpick_yn=='Y'"></span>
+                          <span class='sale_rate' ng-if="item.sale_rate">
+                            {{item.sale_rate}}<b>%</b>
+                            <em>쿠폰포함</em>
+                          </span>
+                      </div>
+                      <div class='cell item_desc t_left'>
+                          <p class='brnNm'>{{item.brnd_nm}}</p>
+                          <p class='subject'>{{item.goods_nm}}</p>
+                          <span class='kwon price_color'>
+                              {{(item.discounted_price||item.price2)|number}}
+                          </span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <nav class='disp_block t_center' ng-if="alias.bestItem.data&&alias.bestItem.data.length>1">
+          <button ng-if="alias.bestItem.swipeIndex>0"
+            class='disp_in_block btn_control_prev v_middle imgMap_prod_utils'
+            ng-click='bestPrev()'></button>
+          <em class='disp_in_block v_middle t_center'>{{alias.bestItem.swipeIndex+1}}/{{alias.bestItem.data.length}}</em>
+          <button ng-if="alias.bestItem.swipeIndex<alias.bestItem.data.length-1"
+            class='disp_in_block btn_control_next v_middle imgMap_prod_utils'
+            ng-click='bestNext()'></button>
+        </nav>
+        <!--//swipeContainer-->
+      </div>
+      <!--//best item -->
+    </div>
+  </div>
+  <!--//best_item_container-->
+
+  <!-- 검색 결과 / -->
+	<div
+    class="listWrap nomarginTop"
+    ng-controller="productCtrl"><!-- ng-show="screenData.goodsTotal" -->
+		<!-- 스와이프 삭제 -->
+		<!-- 검색결과 상품 상단/-->
+		<div class="result_tlt">
+			<div
+                class="result_cnt"
+                ng-show="screenData.goodsTotal!=0">전체
+                <em> {{screenData.goodsTotal|number}} </em>개
+            </div>
+			<div class="result_filter">
+				<ul>
+					<li class='p_rel sort_option' ng-class='{active:pageOptions.sortPopup}' ng-click='sortPopupState()'>
+                        <span class='selectSort disp_in_block v_middle'>
+                            {{pageOptions.sort[pageOptions.sortIndex].sortText}}
+                        </span>
+					</li>
+					<!-- 카테고리: 유닛타입 추가 -->
+					<li>
+						<span
+                            class="unit_listType type1"
+                            ng-class="{on:templateType=='list'}"
+                            ng-show="templateType=='single'"
+                            ng-click="changeTemplate('list')">
+                        </span>
+						<span
+                            class="unit_listType type2"
+                            ng-class="{on:templateType=='image'}"
+                            ng-show="templateType=='list'"
+                            ng-click="changeTemplate('image')">
+                        </span>
+						<span
+                            class="unit_listType type3"
+                            ng-class="{on:templateType=='single'}"
+                            ng-show="templateType=='image'"
+                            ng-click="changeTemplate('single')">
+                        </span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /검색결과 상품 상단-->
+
+		<!-- s: unit list area -->
+		<div class="unitWrap">
+		<!-- //상품리스트 유형 선택 -->
+			<div
+                product-container template-type="image"
+                total-count="screenData.goodsTotal"
+                templatetype="templateType"
+                products="screenData.goodsList"
+                more-product-continer="getProductData()">
+            </div>
+		</div>
+		<!-- e: unit list area -->
+
+	</div>
+	<!-- /검색 결과 -->
+	<section class="noData" ng-if="screenData.goodsTotal == 0 && ! pageLoading">
+		해당하는 상품이 없습니다.
+	</section>
+
+    <!-- SORT -->
+	<div class="ly_seelct" ng-show="pageOptions.sortPopup">
+		<div class="seelct_lst">
+			<div class="branch_wrap">
+				<ul id="branchLst">
+					<li ng-repeat="sortItem in pageOptions.sort" ng-click="sortSelect({{$index}})">
+						<label>
+                            <input
+                                type="radio"
+                                ng-model="form.sortCode"
+                                name="seelct_lst"
+                                value="{{sortItem.sortcode}}"/>{{sortItem.sortText}}
+                            </label>
+                    </li>
+				</ul>
+			</div>
+			<div class="btn_wrap">
+          <button class="btn_close" ng-click="sortPopupState()">닫기</button>
+      </div>
+		</div>
+	</div>
+	<!--//SORT -->
+
+	<div class="listLoading" ng-if="productListLoading">
+	   <p class="loading half"></p>
+  </div>
+
+</section>

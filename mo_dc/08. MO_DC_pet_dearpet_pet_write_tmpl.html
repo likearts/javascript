@@ -1,0 +1,274 @@
+<div class='mask' test-msg="html 업데이트 테스트">
+    <div
+        class='pet_write_forms'
+        hw-swipe
+        swipe-index="swpIdx"
+        swipe-reset="swipereset"
+        swipe-controller="swipeCtrl"
+        swiepe-move="setMoiveFnc"
+        space-x="15">
+        <!-- 등록 폼 -->
+        <div
+            ng-repeat='form in formList'
+            ng-init='formInx=form'
+            class='form form_layer_{{formInx}}'>
+            <div class='box' ng-class='{active:swpIdx==$index}'>
+                <!-- START :: FORM -->
+                <form
+                    id="{{formBaseName}}{{formInx}}"
+                    dataID="{{formInx}}"
+                    ng-model='dataForm[formInx]'
+                    method='post'
+                    enctype="multipart/form-data">
+                    <!-- hidden -->
+                    <input
+                        type='hidden'
+                        name='mbr_no'
+                        value='{{mbr_no}}'/>
+                    <input
+                        type='hidden'
+                        name='bbc_no'
+                        ng-model='dataForm[formInx].bbc_no'
+                        value='{{dataForm[formInx].bbc_no}}'/>
+                    <input
+                        ng-if="dataForm[formInx].type==30"
+                        type='hidden'
+                        name='cate'
+                        ng-model='dataForm[formInx].type'
+                        value='{{dataForm[formInx].type}}'/>
+                    <!-- // hidden -->
+                    <ul class='rel'>
+                        <!-- 사진 -->
+                        <li class='pet_photo'>
+                            <div class='circle'>
+                                <figure
+                                    ng-class='{
+                                            horizontal:dataForm[formInx].rotateCode==2,
+                                            rotate180:dataForm[formInx].rotateCode==3,
+                                            rotate90:dataForm[formInx].rotateCode==6,
+                                            rotateM90:dataForm[formInx].rotateCode==8,
+                                            vertical:dataForm[formInx].rotateCode==4,
+                                            horizontalRotate90:dataForm[formInx].rotateCode==5,
+                                            horizontalRotateM90:dataForm[formInx].rotateCode==7
+                                        }'
+                                    style='{{dataForm[formInx].photo?"background:url("+dataForm[formInx].photo+") no-repeat center center; background-size:auto 100%":""}}'>
+                                </figure>
+                                <i class='i_camea'></i>
+                                <input
+                                    ng-if="AccessUpload"
+                                    type='file'
+                                    gi={{formInx}}
+                                    name="file"
+                                    onchange='angular.element(this).scope().photoPreview(this)'
+                                    accept="image/jpeg"/>
+                                <div ng-click='userVersionCheck()' class='appDownload' ng-if="!AccessUpload"></div>
+                            </div>
+                        </li>
+                        <!-- 이름 -->
+                        <li class='inp_name essential'>
+                            <input
+                                type='text'
+                                class='name full'
+                                name='name'
+                                maxlength="10"
+                                ng-keydown="updateTotal($event)"
+                                ng-keyup="updateTotal($event)"
+                                ng-model='dataForm[formInx].name'
+                                placeholder='우리 아이 이름을 입력해주세요.'/>
+                        </li>
+                        <!-- 종류 -->
+                        <li class='type clear input essential'>
+                            <table width='100%' border=0 cellpadding=0 cellspacing=0 summary=''>
+                                <colgroup>
+                                    <col width='33.3%'>
+                                    <col width='33.3%'>
+                                    <col width='33.3%'>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td  ng-repeat='type in formOptions.type'>
+                                        <label
+                                            for="pet_type_{{formInx}}_{{$index}}"
+                                            ng-click='typeis(formInx, type.cd)'
+                                            ng-class='{active:dataForm[formInx].type==type.cd}'>
+                                            <text>{{type.cd_nm}}</text>
+                                            <em class='outline'></em>
+                                        </label>
+                                        <input
+                                            type='radio'
+                                            name='type'
+                                            id='pet_type_{{formInx}}_{{$index}}'
+                                            ng-model='dataForm[formInx].type'
+                                            value='{{type.cd}}'/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 사이즈  소동물 cd:30 예외처리 ( 코드가 변경되면 수정 변경 해줘야함 ) -->
+                        <li
+                            class='size input clear essential'
+                            ng-if="dataForm[formInx].type&&formOptions.size[dataForm[formInx].type].length">
+                            <table width='100%' border=0 cellpadding=0 cellspacing=0 summary=''>
+                                <colgroup>
+                                    <col width='33.3%'>
+                                    <col width='33.3%'>
+                                    <col width='33.3%'>
+                                </colgroup>
+                                <tbody>
+                                    <tr
+                                        ng-repeat='group in dataForm[formInx].cateList'
+                                        ng-init='groupIdx=$index'>
+                                        <td
+                                            ng-repeat='size in group'
+                                            colspan='{{$index==(group.length-1)?(3-(group.length-1)):0}}'>
+                                            <label
+                                                for='size_{{formInx}}_{{groupIdx+3*$index}}'
+                                                ng-click='setSize()'
+                                                ng-class='{active:dataForm[formInx].size==size.cd}'>
+                                                <text>{{size.cd_nm}}</text>
+                                                <em class='outline col{{(3-(group.length-1))}}'></em>
+                                            </label>
+                                            <input
+                                                type='radio'
+                                                name='size'
+                                                id='size_{{formInx}}_{{groupIdx+3*$index}}'
+                                                ng-model='dataForm[formInx].size'
+                                                value='{{size.cd}}'/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 생일 -->
+                        <li class='birthday table essential' ng-if='formOptions.checkList[ dataForm[formInx].type ].length'>
+                            <span ng-class='{hidenText:dataForm[formInx].birthday}'>
+                                <em ng-class='{none:!dateArrow}'></em>
+                                <input
+                                    type='date'
+                                    class='name full'
+                                    ng-class='{transparent:!dataForm[formInx].birthday}'
+                                    ng-model='dataForm[formInx].birthday'/>
+                                <input
+                                    type='hidden'
+                                    class='name full'
+                                    name='birthday'/>
+                            </span>
+                        </li>
+                        <!-- 성별 -->
+                        <li class='gender clear input essential'>
+                            <table width='66.6%' border=0 cellpadding=0 cellspacing=0 summary=''>
+                                <colgroup>
+                                    <col width='33.3%'>
+                                    <col width='33.3%'>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td ng-repeat='gender in formOptions.gender'>
+                                            <label
+                                                for='gender_{{formInx}}_{{$index}}'
+                                                ng-class='{active:dataForm[formInx].gender==gender.cd}'>
+                                                <text>{{gender.cd_nm}}</text>
+                                                <em class='outline'></em>
+                                            </label>
+                                            <input
+                                                type='radio'
+                                                name='gender'
+                                                id='gender_{{formInx}}_{{$index}}'
+                                                ng-model='dataForm[formInx].gender'
+                                                value='{{gender.cd}}'/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 생일 소동물 cd:30 예외처리 ( 코드가 변경되면 수정 변경 해줘야함 )-->
+                        <li
+                            class='birthday table essential'
+                            ng-if='dataForm[formInx].type&&!formOptions.checkList[ dataForm[formInx].type ].length'>
+                            <span ng-class='{hidenText:dataForm[formInx].birthday}'>
+                                <em ng-class='{none:!dateArrow}'></em>
+                                <input
+                                    type='date'
+                                    class='name full'
+                                    ng-class='{transparent:!dataForm[formInx].birthday}'
+                                    ng-model='dataForm[formInx].birthday'/>
+                                <input
+                                    type='hidden'
+                                    class='name full'
+                                    name='birthday'/>
+                            </span>
+                        </li>
+                        <!-- 고민 체크 리스트 -->
+                        <li
+                            class='input checklist'
+                            ng-if="dataForm[formInx].type&&formOptions.checkList[ dataForm[formInx].type ].length">
+                            <h3>우리 아이 고민들은?</h3>
+                            <table width='100%' cellpadding=0 cellspacing=0 summary=''>
+                                <caption>고민체크리스트</caption>
+                                <colgroup>
+                                    <col="33.3%">
+                                    <col="33.3%">
+                                    <col="33.3%">
+                                </colgroup>
+                                <tbody>
+                                    <tr ng-repeat='group in dataForm[formInx].worryList' ng-init='groupIdx=$index'>
+                                        <td
+                                            class='w33'
+                                            ng-repeat='item in group'
+                                            ng-class='{active:dataForm[formInx].checklist[groupIdx*3+$index].cd==item.cd&&item.cd}'
+                                            colspan='{{$index==(group.length-1)?(3-(group.length-1)):0}}'>
+                                            <label
+                                                for='chkList{{formInx}}_{{groupIdx*3+$index}}'
+                                                ng-click='setWorry(item, formInx, groupIdx*3+$index)'>
+                                                {{item.cd_nm}}
+                                                <em ng-if="item.cd_nm" class='outline col{{(3-(group.length-1))}}'></em>
+                                            </label>
+                                            <em ng-if="!item.cd_nm" class='outline not'></em>
+                                            <input
+                                                type='checkbox'
+                                                name='worry[]'
+                                                ng-checked="{{dataForm[formInx].checklist[groupIdx*3+$index].cd?true:false}}"
+                                                id='chkList{{formInx}}_{{groupIdx*3+$index}}'
+                                                value='{{item.cd}}'/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                    <div class='active_state table per100'>
+                        <span class='cell pet_active_checkbox' ng-class='{active:dataForm[formInx].active}'>
+                            <label for='active_{{formInx}}' ng-click='activeChange(formInx)'><em>이 아이로 활동하기</em></label>
+                            <input
+                                type='checkbox'
+                                name=''
+                                id='active_{{formInx}}'
+                                ng-model='dataForm[formInx].active'/>
+                            <input
+                                type='hidden'
+                                name='active'/>
+                        </span>
+                        <span ng-click='formDelete(formInx, $index )' class='cell btn_delete'>
+                            <img ng-src='http://image.lotte.com/lotte/mo2015/angular/mall/pet_form_delete.png' alt=''/>
+                        </span>
+                    </div>
+                    <input
+                        type='hidden'
+                        name='rotateCode'
+                        ng-model='dataForm[formInx].rotateCode'
+                        value='{{dataForm[formInx].rotateCode}}'/>
+                </form>
+                <!-- END :: FORM -->
+            </div>
+        </div>
+    </div>
+    <!-- 등록 폼 -->
+    <div class='pet_form_indicator'>
+        <span ng-repeat='bnt in formList' ng-class='{active:swpIdx==$index}'>{{$index}}</span>
+    </div>
+    <div class='pet_form_foot_buttons clear'>
+        <button class='float_left' ng-click='formADD()'><em></em>추가하기</button>
+        <button class='float_right' ng-click='submit()'>저장하기</button>
+    </div>
+</div>
