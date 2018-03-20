@@ -1,3 +1,9 @@
+/**
+ * @author 박해원
+ * @date 20170907
+ * @description
+ *  - hw swipe
+ */
 export default class Easing {
     static cubicbezier(type) {
         var easing = "";

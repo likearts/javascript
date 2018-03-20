@@ -1,4 +1,9 @@
-
+/**
+ * @author 박해원
+ * @date 20170907
+ * @description
+ *  - hw swipe
+ */
 .swipe_wrap { padding:20px 0; position:relative }
 .swipe_wrap ul { display: block; margin:0; padding:0}
 .swipe_wrap [hw-swipe]:after { content:""; display:block; clear:both }

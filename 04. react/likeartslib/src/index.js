@@ -1,3 +1,9 @@
+/**
+ * @author 박해원
+ * @date 20170907
+ * @description
+ *  - hw swipe
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

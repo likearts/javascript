@@ -1,3 +1,9 @@
+/**
+ * @author 박해원
+ * @date 20170907
+ * @description
+ *  - hw swipe
+ */
 import { Directive,ElementRef, Renderer } from '@angular/core';
 import { SliderInterface } from './interface.slier';
 import { BaseSlider } from './view.slider';

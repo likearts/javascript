@@ -1,3 +1,9 @@
+/**
+ * @author 박해원
+ * @date 20170907
+ * @description
+ *  - hw swipe
+ */
 import HwSwipeBase from './hwswipebase';
 import SwipeVieWInterface from './interface/base';
 

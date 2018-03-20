@@ -1,3 +1,9 @@
+/**
+ * @author 박해원
+ * @date 20170907
+ * @description
+ *  - hw swipe
+ */
 form label { vertical-align: middle; display:block; font-size:12px; color:#999; font-weight:400; padding:10px }
 form input { vertical-align: middle }
 form input[type=text],
