@@ -1,0 +1,30 @@
+form label { vertical-align: middle; display:block; font-size:12px; color:#999; font-weight:400; padding:10px }
+form input { vertical-align: middle }
+form input[type=text],
+form input[type=password] { padding:5px; color:#d35400; display:block; border-radius: 12px; border:2px solid skyblue; background:#fff }
+form input.ng-invalid { background:red; color:#d35400 }
+div.invalid { font-size:12px; color:red; padding:10px }
+
+[hw-slider] ul { list-style: none; white-space: nowrap; }
+[hw-slider] ul, [hw-slider] li { margin:0; padding:0; }
+[hw-slider] li { -webkit-transition:background-color ease .5s; }
+[hw-slider] li { width:50%; padding:60px 0; text-align:center; display: inline-block; background-color:#fff; border-right:1px solid #d35400; color:#d35400;}
+[hw-slider] li:last-child { border-right:0 }
+[hw-slider] li.active { background-color:orange; }
+[hw-slider] { overflow:hidden; }
+
+
+.swipe_wrap { padding:20px 0; position:relative }
+.swipe_wrap ul { display: block; margin:0; padding:0}
+.swipe_wrap [hw-swipe]:after { content:""; display:block; clear:both }
+.swipe_wrap [hw-swipe] li { border-right:1px solid #fff; background:#e87021; color:#fff; display: block; margin:0; padding:50px 0; text-align:center }
+.swipe_wrap [hw-swipe] li:last-child { border-right:0 }
+
+.swipe_wrap .clear:after { content:""; display: block; clear:both }
+.swipe_wrap a { color:#fff; font-size:11px; padding:10px }
+.swipe_wrap .swc_prev { float:left }
+.swipe_wrap .swc_next { float:right }
+.swipe_wrap .swc_page { position:absolute; top:50%; left:50%;
+  -webkit-transform:translate(-50%,-50%)
+}
+

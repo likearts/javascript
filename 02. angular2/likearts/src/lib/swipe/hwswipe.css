@@ -1,0 +1,16 @@
+
+.swipe_wrap { padding:20px 0; position:relative }
+.swipe_wrap ul { display: block; margin:0; padding:0}
+.swipe_wrap [hw-swipe]:after { content:""; display:block; clear:both }
+.swipe_wrap [hw-swipe] li { border-right:1px solid #fff; background:#e87021; color:#fff; display: block; margin:0; padding:50px 0; text-align:center }
+.swipe_wrap [hw-swipe] li:last-child { border-right:0 }
+
+.swipe_wrap .clear:after { content:""; display: block; clear:both }
+.swipe_wrap a { color:#fff; font-size:11px; padding:10px }
+.swipe_wrap .swc_prev { float:left }
+.swipe_wrap .swc_next { float:right }
+.swipe_wrap .swc_page { font-size:11px; color:#fff; position:absolute; top:50%; left:50%;
+  -webkit-transform:translate(-50%,-50%)
+}
+
+.swipecontainer { position: relative }

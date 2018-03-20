@@ -1,0 +1,66 @@
+<!--h1>
+  {{title}}
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+	  <div ngModelGroup="userData">
+	    <div class="form-group">
+	      <label for="username">Username</label>
+	      <input type="text"
+	             class="form-control"
+	             id="username"
+	             [(ngModel)]="user.username"
+	             name="username"
+	             required>
+	    </div>
+	    <div class="form-group">
+	      <label for="email">E-Mail</label>
+	      <input type="text"
+	             class="form-control"
+	             id="email"
+	             [(ngModel)]="user.email"
+	             name="email"
+	             required
+        				pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+        				#email="ngModel">
+	    </div>
+	    <div *ngIf="!email.valid" class='invalid'>
+				Invaild Email
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="password">Password</label>
+	    <input type="password"
+	           class="form-control"
+	           id="password"
+	           [(ngModel)]="user.password"
+	           name="password"
+	           required>
+	  </div>
+	  <div class="radio" class="radio" *ngFor="let g of genders">
+    <label>
+      <input type="radio"
+            name="gender"
+            required
+            [(ngModel)]="user.gender"
+            [value]="g"> {{g}}
+    </label>
+  </div>
+	  <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>
+	</form>
+</h1-->
+
+<div hw-slider>
+		<ul>
+			<li *ngFor="let item of sliderItems">{{item}}</li>
+		</ul>
+</div>
+
+<div hw-swipe-container [swipeItems]="sliderItems">
+</div>
+
+<div class="swipe_wrap">
+  <ul hw-swipe infinity="true" w320="1" w640="1" w900="2">
+    <li *ngFor=" let item of sliderItems">{{item}} </li>
+  </ul>
+</div>
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	
+	<script>
+		window.onload = init;
+		var app;
+		function init(){
+			app = new Vue({
+			  el: '.app',
+			  data: {
+			    message: '안녕하세요 Vue!',
+			    list : new Array(10).fill()
+			  },
+			  methods: {
+			  	click : function(s){
+			  		console.log('click', s);
+			  		app._data.list.push("10");
+			  	}
+			  }
+			});
+			 setTimeout(function(){
+			  	app._data.list.push("10");
+			  }, 2000);
+		}
+
+	</script>
+	
+	<div id="app" class="app">
+	  {{ message }}
+	  <ul>
+			<li v-for="(item, index) in list">
+				{{index}} <a href='#;' v-on:click="click(index)"> click to push </a>
+			</li>
+	  </ul>
+	</div>
+
+</body>
+</html>

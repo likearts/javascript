@@ -1,0 +1,4 @@
+.swipecontainer { }
+.swipecontainer .swipeItem { padding:100px 0; background: #0f2e33; color:#fff; display:inline-block }
+.indicator_button { margin:10px; font-size:10px; color:#444 }
+.indicator_button.active { color:red }
