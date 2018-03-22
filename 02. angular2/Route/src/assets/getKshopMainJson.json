@@ -1,0 +1,136 @@
+{
+	"topHtml": "<ul><li><a href=\"#\/info\"><img alt=\"K.SHOP\" src=\"http:\/\/image.lotte.com\/lotte\/mobile\/mobile_new\/brandshop\/kshop\/temp_kshop_s_banner01.gif\" \/><\/a>&nbsp;<\/li><li><a href=\"\/product\/m\/product_list.do?curDispNo=5382645&amp;tclick=M_K_DreamPlaza\"><img alt=\"롯데백화점 드림 플라자\" src=\"http:\/\/image.lotte.com\/lotte\/mobile\/mobile_new\/brandshop\/kshop\/temp_kshop_s_banner02.gif\" \/><\/a><\/li><li><a href=\"\/product\/m\/product_list.do?curDispNo=5383371&amp;tclick=M_K_TogetherShow\"><img alt=\"아임쇼핑\" src=\"http:\/\/image.lotte.com\/upload\/editor\/2015\/07\/03\/2459963.gif\" \/><\/a><\/li><\/ul>",
+	"prdList": [{
+		"items": [{
+			"saleRate": 0,
+			"flag": ["sort_icon05"],
+			"sImgUrl": "\/goods\/48\/23\/29\/88\/1\/188292348_1_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 188292348,
+			"goodsCmpsCd": "50",
+			"price2": "118,400",
+			"goodsNm": "제니스(ZENITH) 2종 택1",
+			"price1": ""
+		}, {
+			"saleRate": 0,
+			"flag": ["sort_icon05"],
+			"sImgUrl": "\/goods\/92\/14\/61\/78\/1\/178611492_1_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 178611492,
+			"goodsCmpsCd": "50",
+			"price2": "186,900",
+			"goodsNm": "플랫아이언 정글 글래머 크로스백 빈티지민트 F1001801BM",
+			"price1": "235,000"
+		}],
+		"ctgName": "Edge Look"
+	}, {
+		"items": [{
+			"saleRate": 0,
+			"flag": ["sort_icon05"],
+			"sImgUrl": "\/goods\/20\/75\/00\/67\/67007520_2_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 67007520,
+			"goodsCmpsCd": "50",
+			"price2": "70,000",
+			"goodsNm": "불가리안 로즈 블레미쉬 케어 세럼 플러스 50ml+정품 로즈팩2매",
+			"price1": ""
+		}, {
+			"saleRate": 0,
+			"flag": ["sort_icon05"],
+			"sImgUrl": "\/goods\/00\/43\/64\/6\/6644300_1_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 6644300,
+			"goodsCmpsCd": "50",
+			"price2": "28,800",
+			"goodsNm": "로사 다브레카 루스 파우더25g+[증정]파우더 휴대용기",
+			"price1": "32,000"
+		}],
+		"ctgName": "Awesome Beauty"
+	}, {
+		"items": [{
+			"saleRate": 0,
+			"flag": [],
+			"sImgUrl": "\/goods\/89\/46\/19\/04\/1\/104194689_1_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 104194689,
+			"goodsCmpsCd": "50",
+			"price2": "9,900",
+			"goodsNm": "닥터크리너 휴대용 칫솔살균기(건전지 타입)",
+			"price1": ""
+		}, {
+			"saleRate": 0,
+			"flag": [],
+			"sImgUrl": "\/goods\/06\/92\/75\/57\/1\/157759206_1_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 157759206,
+			"goodsCmpsCd": "50",
+			"price2": "44,000",
+			"goodsNm": "프리미엄 베이킹 가리개 (85cm x 135cm) [맞춤제작]",
+			"price1": ""
+		}],
+		"ctgName": "Creative Living"
+	}, {
+		"items": [{
+			"saleRate": 6,
+			"flag": ["sort_icon05"],
+			"sImgUrl": "\/goods\/94\/47\/38\/23\/23384794_1_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 23384794,
+			"goodsCmpsCd": "50",
+			"price2": "397,100",
+			"goodsNm": "아이클레보 로봇청소기 아르떼 모던블랙 YCR-M05-10",
+			"price1": "399,000"
+		}, {
+			"saleRate": 0,
+			"flag": [],
+			"sImgUrl": "\/goods\/94\/95\/82\/78\/1\/178829594_1_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 178829594,
+			"goodsCmpsCd": "50",
+			"price2": "18,840",
+			"goodsNm": "소프티 슈 softie shoe 64G 실리콘 USB메모리[7가지색상]",
+			"price1": "20,700"
+		}],
+		"ctgName": "Novel Devices"
+	}, {
+		"items": [{
+			"saleRate": 0,
+			"flag": ["sort_icon05", "sort_icon01"],
+			"sImgUrl": "\/goods\/41\/01\/67\/40\/1\/140670141_1_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 140670141,
+			"goodsCmpsCd": "50",
+			"price2": "18,140",
+			"goodsNm": "장석준 명란 4팩(온명란＋자른명란＋송송명란＋알탕, 각 1팩\/80g) \/무료배송",
+			"price1": "19,500"
+		}, {
+			"saleRate": 0,
+			"flag": ["sort_icon05"],
+			"sImgUrl": "\/goods\/16\/16\/07\/42\/42071616_1_280.jpg",
+			"byrAgelmt": "0",
+			"goodsNo": 42071616,
+			"goodsCmpsCd": "50",
+			"price2": "16,500",
+			"goodsNm": "순수한 호박즙 1박스(30포)",
+			"price1": ""
+		}],
+		"ctgName": "Authentic Food"
+	}],
+	"banners": [{
+		"imgUrl": "http:\/\/image.lotte.com\/upload\/display\/corner\/5535841_42956_40972_30_13008070_11.jpg",
+		"linkUrl": "\/product\/m\/product_list.do?curDispNo=5388925&tclick=K_THEME_05",
+		"alt": "뷰티통합전"
+	}, {
+		"imgUrl": "http:\/\/image.lotte.com\/upload\/display\/corner\/5535841_42956_40972_30_13008070_10.jpg",
+		"linkUrl": "\/product\/m\/product_list.do?curDispNo=5388095&tclick=K_THEME_05",
+		"alt": "식품통합전"
+	}, {
+		"imgUrl": "http:\/\/image.lotte.com\/upload\/display\/corner\/5535841_42956_40972_30_13008070_8.jpg",
+		"linkUrl": "\/product\/m\/product_list.do?curDispNo=5389436&tclick=K_THEME_05",
+		"alt": "노블디바이스"
+	}, {
+		"imgUrl": "http:\/\/image.lotte.com\/upload\/display\/corner\/5535841_42956_40972_30_13008070_2.jpg",
+		"linkUrl": "\/mall\/kshop\/kshop.do?c=mlotte&udid=&v=&cn=&cdn=&tclick=M_K_THEME_02#\/5536035",
+		"alt": "제이다울"
+	}]
+}
