@@ -59,9 +59,6 @@
 
         $rootScope.$on('$locationChangeStart',
         function(event, currRoute, prevRoute){ // currRoute:현재 페이지 URL, prevRoute:이전 페이지 URL
-            angular.forEach($route.routes, function (value, key) {
-               console.log('value',value);
-            });
             // 페이지 경로
             console.log('page', $location.$$path);
             $scope.pageName = $location.$$path;
