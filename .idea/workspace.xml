@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="259e8689-94e9-4066-b2a9-9b32e978a622" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/handler.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/js/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/pages/contact.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/pages/home.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/pages/profile.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/pages/works.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/router.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/server.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/01. angular/Router/handler.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/01. angular/Router/router.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/01. angular/package-lock.json" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,126 +21,7 @@
     <favorites_list name="02. JavaScript" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41417912">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="HWSwipe.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/00. Likearts Lib/hwswipe/HWSwipe.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/server.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/router.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="handler.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/handler.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/js/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/home.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/profile.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="works.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/works.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/contact.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/js/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="597">
-                  <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -255,7 +130,6 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/01. angular/Router/node_modules" />
     <handled-path value="$PROJECT_DIR$/02. angular2/likearts/node_modules" />
-    <handled-path value="$PROJECT_DIR$/04. react/hwslider/node_modules" />
     <handled-path value="$PROJECT_DIR$/04. react/likeartslib/node_modules" />
     <handled-path value="$PROJECT_DIR$/04. react/node_modules" />
   </component>
@@ -404,12 +278,12 @@
       <workItem from="1519026048810" duration="1021000" />
       <workItem from="1519697529075" duration="72000" />
       <workItem from="1521510367357" duration="654000" />
-      <workItem from="1521610445079" duration="6986000" />
+      <workItem from="1521610445079" duration="7451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265420000" />
+    <option name="totallyTimeSpent" value="265885000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,7 +296,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15279241" sideWeight="0.4954955" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -432,7 +305,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15523809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15523809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RNConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15437302" sideWeight="0.5045045" order="2" side_tool="true" content_ui="tabs" />
@@ -917,14 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01. angular/Router/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -944,7 +809,7 @@
     <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -952,7 +817,7 @@
     <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/works.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -965,10 +830,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/Router/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/01. angular/Router/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>

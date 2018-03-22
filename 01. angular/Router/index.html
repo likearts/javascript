@@ -87,10 +87,10 @@
     <div id="main">
 
         <div class="gnb">
-            <a href="#!?screenID=main" ng-class="{active:page==1}">home</a>
-            <a href="#!profile?user=likearts&no=123" ng-class="{active:page==2}">Profile</a>
-            <a href="#!works?cat=all&id=1" ng-class="{active:page==3}">works</a>
-            <a href="#!contact?screenID=mail" ng-class="{active:page==4}">contact</a>
+            <a href="#!{{routeName.home}}?screenID=main" ng-class="{active:pageName==routeName.home}">home</a>
+            <a href="#!{{routeName.profile}}?user=likearts&no=123" ng-class="{active:pageName==routeName.profile}">Profile</a>
+            <a href="#!{{routeName.works}}?cat=all&id=1" ng-class="{active:pageName==routeName.works}">works</a>
+            <a href="#!{{routeName.contact}}?screenID=mail" ng-class="{active:pageName==routeName.contact}">contact</a>
         </div>
 
         <div id="routedContent" ng-view data-ng-controller="HomeFragmentController"></div>

@@ -4,38 +4,38 @@
     angular.module('likearts',['ngRoute','ngAnimate'])
 
     // Router 네임
-    .value('routeName',[
-        '/',
-        '/profile',
-        '/works',
-        '/contact'
-    ])
+    .value('routeName', {
+        home:'/',
+        profile:'/profile',
+        works:'/works',
+        contact:'/contact'
+    })
 
     // Router 페이지 설정
     .config(function($routeProvider,routeNameProvider){
         $routeProvider
-        .when(routeNameProvider.$get()[0],{
+        .when(routeNameProvider.$get().home,{
             templateUrl : 'pages/home.html',
             controller:'',
             access: {
                 isFree: true
             }
         })
-        .when(routeNameProvider.$get()[1],{
+        .when(routeNameProvider.$get().profile,{
             templateUrl : 'pages/profile.html',
             controller:'',
             access: {
                 isFree: true
             }
         })
-        .when(routeNameProvider.$get()[2],{
+        .when(routeNameProvider.$get().works,{
             templateUrl : 'pages/works.html',
             controller:'worksCtrl',
             access: {
                 isFree: true
             }
         })
-        .when(routeNameProvider.$get()[3],{
+        .when(routeNameProvider.$get().contact,{
             templateUrl : 'pages/contact.html',
             controller:'',
             access: {
@@ -47,30 +47,27 @@
         });
     })
 
-    .controller( 'likeartsCtrl',function($scope,$rootScope,$location,routeName){
-
-        // 현재 페이지 메뉴 컬러 변경
-        $scope.page = 1;
-        $scope.gnbActive = function(name){
-            for( var i in routeName ) if( routeName[i] === name ) { $scope.page=Number(i)+1; break }
-        }
+    .controller( 'likeartsCtrl',function($scope,$rootScope,$location,routeName,$route){
+        $scope.routeName = routeName;
 
         $scope.HomeFragmentController = function($scope) {
-            console.log('HomeFragmentController')
-            $scope.$on("$routeChangeSuccess", function (scope, next, current) {
+            $scope.$on("$routeChangeSuccess", function(scope,next,current) {
+                console.log('success');
                 $scope.transitionState = "active";
             });
         }
 
         $rootScope.$on('$locationChangeStart',
         function(event, currRoute, prevRoute){ // currRoute:현재 페이지 URL, prevRoute:이전 페이지 URL
+            angular.forEach($route.routes, function (value, key) {
+               console.log('value',value);
+            });
             // 페이지 경로
             console.log('page', $location.$$path);
-            $scope.gnbActive($location.$$path);
+            $scope.pageName = $location.$$path;
             // 넘어온 파라미터
             console.log('params', $location.search());
         })
-
     })
 
     // works 페이지 controller
