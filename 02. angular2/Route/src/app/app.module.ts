@@ -11,7 +11,7 @@ import {
   Works,
   Contact,
   NotFound
-} from '../component/index';
+} from '../component';
 
 @NgModule({
   declarations: [

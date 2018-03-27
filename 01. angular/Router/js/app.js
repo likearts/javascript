@@ -64,7 +64,7 @@
             $scope.pageName = $location.$$path;
             // 넘어온 파라미터
             console.log('params', $location.search());
-        })
+        });
     })
 
     // works 페이지 controller
