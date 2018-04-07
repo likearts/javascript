@@ -1,0 +1,9 @@
+<div class="homeWrap">
+    <div photo-list>
+        <ul ng-if="photoItems.length" ng-repeat="item in photoItems | limitTo:10 ">
+            <li>
+               <img ng-src="{{item.url}}" alt=""/>
+            </li>
+        </ul>
+    </div>
+</div>

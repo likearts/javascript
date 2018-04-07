@@ -5,15 +5,371 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="259e8689-94e9-4066-b2a9-9b32e978a622" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/Router/js/app2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/gruntfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/inc/foot.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/inc/gnb.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/inc/head.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/js/angular-animate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/js/angular-ui-router.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/js/angular.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/js/app.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/js/gnb/gnb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/js/route/routeConfig.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/js/route/router.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/js/ui/layout.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/.bin/mime" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/.bin/mime.cmd" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/accepts/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/accepts/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/accepts/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/accepts/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/accepts/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/array-flatten/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/array-flatten/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/array-flatten/array-flatten.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/array-flatten/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/lib/read.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/lib/types/json.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/lib/types/raw.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/lib/types/text.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/lib/types/urlencoded.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/body-parser/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/bytes/History.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/bytes/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/bytes/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/bytes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/bytes/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-disposition/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-disposition/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-disposition/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-disposition/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-disposition/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-type/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-type/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-type/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-type/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/content-type/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie-signature/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie-signature/History.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie-signature/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie-signature/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie-signature/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/cookie/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/.coveralls.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/component.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/karma.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/node.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/src/browser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/src/debug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/src/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/src/inspector-log.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/debug/src/node.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/depd/History.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/depd/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/depd/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/depd/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/depd/lib/browser/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/depd/lib/compat/callsite-tostring.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/depd/lib/compat/event-listener-count.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/depd/lib/compat/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/depd/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/destroy/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/destroy/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/destroy/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/destroy/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ee-first/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ee-first/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ee-first/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ee-first/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/encodeurl/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/encodeurl/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/encodeurl/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/encodeurl/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/encodeurl/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/escape-html/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/escape-html/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/escape-html/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/escape-html/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/etag/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/etag/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/etag/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/etag/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/etag/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/History.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/application.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/express.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/middleware/init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/middleware/query.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/request.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/response.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/router/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/router/layer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/router/route.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/lib/view.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/express/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/finalhandler/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/finalhandler/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/finalhandler/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/finalhandler/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/finalhandler/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/forwarded/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/forwarded/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/forwarded/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/forwarded/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/forwarded/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/fresh/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/fresh/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/fresh/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/fresh/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/fresh/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/depd/History.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/depd/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/depd/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/depd/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/depd/lib/browser/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/depd/lib/compat/callsite-tostring.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/depd/lib/compat/event-listener-count.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/depd/lib/compat/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/depd/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/setprototypeof/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/setprototypeof/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/setprototypeof/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/node_modules/setprototypeof/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/http-errors/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/Changelog.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/dbcs-codec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/dbcs-data.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/internal.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/sbcs-codec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/sbcs-data-generated.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/sbcs-data.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/tables/big5-added.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/tables/cp936.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/tables/cp949.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/tables/cp950.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/tables/eucjp.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/tables/gbk-added.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/tables/shiftjis.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/utf16.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/encodings/utf7.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/lib/bom-handling.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/lib/extend-node.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/lib/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/lib/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/lib/streams.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/iconv-lite/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/inherits/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/inherits/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/inherits/inherits.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/inherits/inherits_browser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/inherits/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/Cakefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/ipaddr.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/lib/ipaddr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/lib/ipaddr.js.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/src/ipaddr.coffee" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ipaddr.js/test/ipaddr.test.coffee" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/media-typer/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/media-typer/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/media-typer/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/media-typer/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/media-typer/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/merge-descriptors/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/merge-descriptors/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/merge-descriptors/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/merge-descriptors/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/merge-descriptors/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/methods/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/methods/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/methods/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/methods/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/methods/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-db/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-db/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-db/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-db/db.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-db/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-db/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-types/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-types/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-types/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-types/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime-types/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime/build/build.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime/build/test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime/cli.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime/mime.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/mime/types.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ms/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ms/license.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ms/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/ms/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/negotiator/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/negotiator/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/negotiator/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/negotiator/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/negotiator/lib/charset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/negotiator/lib/encoding.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/negotiator/lib/language.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/negotiator/lib/mediaType.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/negotiator/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/on-finished/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/on-finished/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/on-finished/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/on-finished/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/on-finished/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/parseurl/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/parseurl/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/parseurl/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/parseurl/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/parseurl/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/path-to-regexp/History.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/path-to-regexp/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/path-to-regexp/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/path-to-regexp/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/path-to-regexp/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/proxy-addr/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/proxy-addr/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/proxy-addr/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/proxy-addr/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/proxy-addr/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/.editorconfig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/.eslintignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/dist/qs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/lib/formats.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/lib/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/lib/parse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/lib/stringify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/lib/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/test/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/test/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/test/parse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/test/stringify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/qs/test/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/range-parser/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/range-parser/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/range-parser/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/range-parser/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/range-parser/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/raw-body/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/raw-body/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/raw-body/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/raw-body/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/raw-body/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/raw-body/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/safe-buffer/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/safe-buffer/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/safe-buffer/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/safe-buffer/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/safe-buffer/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/safe-buffer/test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/send/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/send/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/send/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/send/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/send/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/serve-static/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/serve-static/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/serve-static/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/serve-static/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/serve-static/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/setprototypeof/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/setprototypeof/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/setprototypeof/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/setprototypeof/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/setprototypeof/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/statuses/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/statuses/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/statuses/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/statuses/codes.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/statuses/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/statuses/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/type-is/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/type-is/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/type-is/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/type-is/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/type-is/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/unpipe/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/unpipe/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/unpipe/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/unpipe/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/unpipe/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/utils-merge/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/utils-merge/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/utils-merge/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/utils-merge/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/utils-merge/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/vary/HISTORY.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/vary/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/vary/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/vary/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/node_modules/vary/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/server.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/template/contact.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/template/home.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/template/profile.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/01. angular/20180331/template/works.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/01. angular/Router/index.html" afterPath="$PROJECT_DIR$/01. angular/Router/index.html" />
-      <change beforePath="$PROJECT_DIR$/01. angular/Router/js/app.js" afterPath="$PROJECT_DIR$/01. angular/Router/js/app.js" />
-      <change beforePath="$PROJECT_DIR$/02. angular2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/02. angular2/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/02. angular2/Route/src/app/app.module.ts" afterPath="$PROJECT_DIR$/02. angular2/Route/src/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/01. angular/Router/js/angular-ui-router.js" afterPath="$PROJECT_DIR$/01. angular/Router/js/angular-ui-router.js" />
+      <change beforePath="$PROJECT_DIR$/01. angular/Router/js/angular.js" afterPath="$PROJECT_DIR$/01. angular/Router/js/angular.js" />
+      <change beforePath="$PROJECT_DIR$/01. angular/Router/node_modules/express/lib/application.js" afterPath="$PROJECT_DIR$/01. angular/Router/node_modules/express/lib/application.js" />
+      <change beforePath="$PROJECT_DIR$/01. angular/Router/node_modules/express/lib/router/index.js" afterPath="$PROJECT_DIR$/01. angular/Router/node_modules/express/lib/router/index.js" />
+      <change beforePath="$PROJECT_DIR$/01. angular/Router/node_modules/express/lib/router/layer.js" afterPath="$PROJECT_DIR$/01. angular/Router/node_modules/express/lib/router/layer.js" />
+      <change beforePath="$PROJECT_DIR$/01. angular/Router/node_modules/express/lib/router/route.js" afterPath="$PROJECT_DIR$/01. angular/Router/node_modules/express/lib/router/route.js" />
       <change beforePath="$PROJECT_DIR$/02. angular2/Route/src/route/routes.ts" afterPath="$PROJECT_DIR$/02. angular2/Route/src/route/routes.ts" />
+      <change beforePath="$PROJECT_DIR$/04. react/hwslider/node_modules/express/lib/application.js" afterPath="$PROJECT_DIR$/04. react/hwslider/node_modules/express/lib/application.js" />
+      <change beforePath="$PROJECT_DIR$/04. react/hwslider/node_modules/express/lib/router/index.js" afterPath="$PROJECT_DIR$/04. react/hwslider/node_modules/express/lib/router/index.js" />
+      <change beforePath="$PROJECT_DIR$/04. react/hwslider/node_modules/express/lib/router/layer.js" afterPath="$PROJECT_DIR$/04. react/hwslider/node_modules/express/lib/router/layer.js" />
+      <change beforePath="$PROJECT_DIR$/04. react/hwslider/node_modules/express/lib/router/route.js" afterPath="$PROJECT_DIR$/04. react/hwslider/node_modules/express/lib/router/route.js" />
+      <change beforePath="$PROJECT_DIR$/04. react/hwslider/node_modules/http-proxy-middleware/lib/config-factory.js" afterPath="$PROJECT_DIR$/04. react/hwslider/node_modules/http-proxy-middleware/lib/config-factory.js" />
+      <change beforePath="$PROJECT_DIR$/04. react/hwslider/node_modules/http-proxy-middleware/lib/index.js" afterPath="$PROJECT_DIR$/04. react/hwslider/node_modules/http-proxy-middleware/lib/index.js" />
+      <change beforePath="$PROJECT_DIR$/04. react/hwslider/node_modules/http-proxy-middleware/lib/logger.js" afterPath="$PROJECT_DIR$/04. react/hwslider/node_modules/http-proxy-middleware/lib/logger.js" />
+      <change beforePath="$PROJECT_DIR$/04. react/hwslider/node_modules/sw-toolbox/sw-toolbox.js" afterPath="$PROJECT_DIR$/04. react/hwslider/node_modules/sw-toolbox/sw-toolbox.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,106 +385,28 @@
     <favorites_list name="02. JavaScript" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48258707">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/js/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="370">
-                  <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/home.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/profile.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="works.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/works.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/css/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="131">
-                  <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="app2.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/js/app2.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="625">
-                  <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="angular-ui-router.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/js/angular-ui-router.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3165">
-                  <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/01. angular/Router/js/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="850">
-                  <caret line="72" column="6" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="72" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02. angular2/likearts2018/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".angular-cli.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02. angular2/likearts2018/.angular-cli.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -177,25 +455,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="D:/workspace/01.FO2013/event/event_yut_20180105.html" />
-        <option value="$USER_HOME$/Desktop/FO/event_yut_20180105.html" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/App.js" />
-        <option value="$PROJECT_DIR$/04. react/hwslider/src/App.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/index.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/tmpl/slider/slidertmpl.css" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/tmpl/slider/slidertmpl.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/tmpl/swipe/swipetmpl.css" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/tmpl/swipe/swipetmpl.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/easing/easing.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/slider/baseslider.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/slider/hwslider.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/slider/interface.base.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/slider/interface.slider.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/store/actionStore.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/store/storetypes.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/swipe/interface/base.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/swipe/interface/view.js" />
-        <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/swipe/hwswipe.js" />
         <option value="$PROJECT_DIR$/04. react/likeartslib/src/lib/swipe/hwswipebase.js" />
         <option value="$PROJECT_DIR$/02. angular2/likearts/src/lib/ease/easing.ts" />
         <option value="$PROJECT_DIR$/02. angular2/likearts/src/lib/event/EventManager.ts" />
@@ -225,9 +484,28 @@
         <option value="$PROJECT_DIR$/01. angular/Router/pages/works.html" />
         <option value="$PROJECT_DIR$/01. angular/Router/pages/profile.html" />
         <option value="$PROJECT_DIR$/01. angular/Router/pages/home.html" />
-        <option value="$PROJECT_DIR$/01. angular/Router/index.html" />
         <option value="$PROJECT_DIR$/01. angular/Router/css/style.css" />
         <option value="$PROJECT_DIR$/01. angular/Router/js/app2.js" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/js/router.js" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/js/routeConfig.js" />
+        <option value="$PROJECT_DIR$/01. angular/Router/index.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/js/route/routeConfig.js" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/template/contact.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/template/home.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/template/profile.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/template/works.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/js/route/router.js" />
+        <option value="$PROJECT_DIR$/01. angular/Router/__index.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/inc/gnb.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/inc/haed.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/js/app.js" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/js/ui/layout.js" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/inc/foot.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/inc/head.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/index.html" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/css/style.css" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/js/gnb/gnb.js" />
+        <option value="$PROJECT_DIR$/01. angular/20180331/gruntfile.js" />
       </list>
     </option>
   </component>
@@ -238,18 +516,17 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/01. angular/20180331/node_modules" />
     <handled-path value="$PROJECT_DIR$/01. angular/Router/node_modules" />
-    <handled-path value="$PROJECT_DIR$/02. angular2/Route/node_modules" />
-    <handled-path value="$PROJECT_DIR$/02. angular2/likearts/node_modules" />
+    <handled-path value="$PROJECT_DIR$/02. angular2/likearts2018/node_modules" />
     <handled-path value="$PROJECT_DIR$/04. react/hwslider/node_modules" />
-    <handled-path value="$PROJECT_DIR$/04. react/likeartslib/node_modules" />
     <handled-path value="$PROJECT_DIR$/04. react/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="1" />
-    <option name="width" value="1918" />
-    <option name="height" value="1171" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="74" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -282,8 +559,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -291,59 +566,37 @@
               <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="01. angular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="01. angular" type="462c0819:PsiDirectoryNode" />
-              <item name="Router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="01. angular" type="462c0819:PsiDirectoryNode" />
-              <item name="Router" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="01. angular" type="462c0819:PsiDirectoryNode" />
-              <item name="Router" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="{&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\likearts\00. Test\02. JavaScript\javascript\01. angular\Router" />
-      <recent name="D:\workspace\01.FO2013\css" />
-      <recent name="D:\likearts\00. Test\02. JavaScript\02. angular2\likearts\src\lib\swipe" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01. angular/20180331/js/ui" />
+      <recent name="$PROJECT_DIR$/01. angular/20180331/js/route" />
       <recent name="D:\likearts\00. Test\02. JavaScript\javascript\01. angular\Router\node_modules" />
       <recent name="D:\likearts\00. Test\02. JavaScript\javascript\01. angular\Router" />
       <recent name="D:\likearts\00. Test\02. JavaScript\04. react\likeartslib\src\lib\store" />
-      <recent name="D:\likearts\00. Test\02. JavaScript\04. react\likeartslib\src\tmpl" />
-      <recent name="D:\likearts\00. Test\02. JavaScript\04. react\likeartslib\src\lib\easing" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01. angular/20180331" />
+      <recent name="D:\likearts\00. Test\02. JavaScript\javascript\01. angular\Router" />
+      <recent name="D:\workspace\01.FO2013\css" />
+      <recent name="D:\likearts\00. Test\02. JavaScript\02. angular2\likearts\src\lib\swipe" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -400,11 +653,15 @@
       <workItem from="1521510367357" duration="654000" />
       <workItem from="1521610445079" duration="7451000" />
       <workItem from="1522106853425" duration="4763000" />
+      <workItem from="1522472513190" duration="11734000" />
+      <workItem from="1522573426133" duration="86000" />
+      <workItem from="1522629414551" duration="3754000" />
+      <workItem from="1522652849229" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270648000" />
+    <option name="totallyTimeSpent" value="286227000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,27 +673,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15279241" sideWeight="0.4954955" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.209584" sideWeight="0.4954955" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295238" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15523809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="RNConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1783496" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15437302" sideWeight="0.5045045" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="RNConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921028" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18899734" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -463,64 +719,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/karma/config.tpl.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/ng/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/ng/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/ng/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/enum/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/enum/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/enum/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/pipe/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/pipe/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/pipe/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/class/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/class/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/class/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/guard/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/guard/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/guard/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/module/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/module/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/module/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/service/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/service/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/service/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/component/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/component/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/component/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/directive/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/directive/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/directive/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/interface/index.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/interface/index.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/@angular/cli/blueprints/interface/index.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/Reflect.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/Reflect.d.ts" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/Reflect.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-metadata.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-decorate.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
-        <option value="$PROJECT_DIR$/02. angular2/likearts/node_modules/reflect-metadata/test/reflect-hasmetadata.js.map" />
-      </list>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -564,154 +762,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/04. react/likeartslib/src/lib/swipe/hwswipebase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04. react/likeartslib/src/tmpl/slider/slidertmpl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04. react/likeartslib/src/tmpl/slider/slidertmpl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04. react/likeartslib/src/tmpl/swipe/swipetmpl.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04. react/likeartslib/src/tmpl/swipe/swipetmpl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04. react/likeartslib/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04. react/likeartslib/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04. react/hwslider/src/App.js" />
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/slider/hwslider.directive.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/swipe/hwswipe.base.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/swipe/hwswipe.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#72#117#0" expanded="true" />
-            <marker date="1521510678356" expanded="true" signature="256:839" ph="..." />
-            <marker date="1521510678356" expanded="true" signature="278:577" ph="..." />
-            <marker date="1521510678356" expanded="true" signature="620:826" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/swipe/hwswipe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/swipe/hwswipe.directive.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/swipe/hwswipe.directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/swipe/hwswipe.interface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/swipe/hwswipe.provider.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/swipe/hwswipe.view.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/swipe/base.interface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/slider/view.slider.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/event/EventManager.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02. angular2/likearts/src/lib/utils/override.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -844,30 +894,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01. angular/Router/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01. angular/Router/js/angular-ui-router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3165">
-          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01. angular/Router/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/Router/index2.html" />
     <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/works.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -880,46 +907,203 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01. angular/Router/__index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="71" lean-forward="true" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01. angular/Router/pages/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01. angular/Router/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01. angular/Router/js/app2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
+        <state relative-caret-position="351">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/01. angular/Router/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+        <state relative-caret-position="-7">
+          <caret line="197" column="1" lean-forward="false" selection-start-line="197" selection-start-column="1" selection-end-line="197" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/Router/js/angular-ui-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/node_modules/ms/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/template/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/template/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/template/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/template/works.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/Router/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/Router/__index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="89" column="11" lean-forward="false" selection-start-line="89" selection-start-column="11" selection-end-line="100" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/js/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/inc/gnb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/Router/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5196">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/js/gnb/gnb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/inc/foot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/js/ui/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/js/route/routeConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/js/route/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01. angular/20180331/inc/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02. angular2/likearts2018/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02. angular2/likearts2018/.angular-cli.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
         </state>
       </provider>

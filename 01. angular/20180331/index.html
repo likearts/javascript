@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Router</title>
+
+	<script src="js/angular.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/route/router.js"></script>
+	<script src="js/route/routeConfig.js"></script>
+	<script src="js/gnb/gnb.js"></script>
+	<script src="js/ui/layout.js"></script>
+	<script src="js/controller/home.js"></script>
+	<script src="js/service/base.js"></script>
+	<script src="js/urls/mainurls.js"></script>
+	<script src="js/service/apilist.js"></script>
+	<script src="js/app.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="likearts" ng-controller="likeartsCtrl">
+
+<lk-head></lk-head>
+
+<div class="container"
+	 content-container
+	 ng-class="{full:headState}">
+	<gnb-view></gnb-view>
+	<div>
+		<ng-view></ng-view>
+	</div>
+</div>
+
+<lk-foot></lk-foot>
+
+</body>
+</html>
