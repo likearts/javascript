@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://localhost:9191/#!/ -->
+<html lang="kr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Router</title>
+
+	<script src="./Router_files/angular.js"></script>
+	<script src="./Router_files/angular-route.js"></script>
+	<script src="./Router_files/router.js"></script>
+	<script src="./Router_files/routeConfig.js"></script>
+	<script src="./Router_files/gnb.js"></script>
+	<script src="./Router_files/layout.js"></script>
+	<script src="./Router_files/home.js"></script>
+	<script src="./Router_files/base.js"></script>
+	<script src="./Router_files/mainurls.js"></script>
+	<script src="./Router_files/apilist.js"></script>
+	<script src="./Router_files/utils.js"></script>
+	<script src="./Router_files/app.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./Router_files/style.css">
+</head>
+<body ng-app="likearts" ng-controller="likeartsCtrl" class="ng-scope">
+
+<lk-head class="ng-scope"><header ng-class="{isShow:state}" class="isShow">
+  <subtitle> head </subtitle>
+</header></lk-head>
+
+<div class="container full" content-container="" ng-class="{full:headState}">
+	<gnb-view class="ng-scope"><nav>
+    <a href="http://localhost:9191/#!/profile?user=likearts&amp;no=123" ng-class="{active:pageName==routeName.profile}" class="active">Profile</a>
+    <a href="http://localhost:9191/#!/works?cat=all&amp;id=1" ng-class="{active:pageName==routeName.works}" class="active">works</a>
+    <a href="http://localhost:9191/#!/contact?screenID=mail" ng-class="{active:pageName==routeName.contact}" class="active">contact</a>
+</nav></gnb-view>
+	<div>
+		<!-- ngView: --><ng-view class="ng-scope"><div class="homeWrap ng-scope">
+    <div photo-list="" class="ng-scope">
+        <!-- ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/92c952" alt="" src="./Router_files/92c952">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/771796" alt="" src="./Router_files/771796">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/24f355" alt="" src="./Router_files/24f355">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/d32776" alt="" src="./Router_files/d32776">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/f66b97" alt="" src="./Router_files/f66b97">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/56a8c2" alt="" src="./Router_files/56a8c2">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/b0f7cc" alt="" src="./Router_files/b0f7cc">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/54176f" alt="" src="./Router_files/54176f">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/51aa97" alt="" src="./Router_files/51aa97">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/810b14" alt="" src="./Router_files/810b14">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/1ee8a4" alt="" src="./Router_files/1ee8a4">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/66b7d2" alt="" src="./Router_files/66b7d2">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/197d29" alt="" src="./Router_files/197d29">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/61a65" alt="" src="./Router_files/61a65">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/f9cee5" alt="" src="./Router_files/f9cee5">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/fdf73e" alt="" src="./Router_files/fdf73e">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/9c184f" alt="" src="./Router_files/9c184f">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/1fe46f" alt="" src="./Router_files/1fe46f">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/56acb2" alt="" src="./Router_files/56acb2">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/8985dc" alt="" src="./Router_files/8985dc">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/5e12c6" alt="" src="./Router_files/5e12c6">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/45601a" alt="" src="./Router_files/45601a">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/e924e6" alt="" src="./Router_files/e924e6">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/8f209a" alt="" src="./Router_files/8f209a">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/5e3a73" alt="" src="./Router_files/5e3a73">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/474645" alt="" src="./Router_files/474645">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/c984bf" alt="" src="./Router_files/c984bf">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/392537" alt="" src="./Router_files/392537">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/602b9e" alt="" src="./Router_files/602b9e">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems --><!-- ngIf: photoItems.length --><ul ng-if="photoItems.length" ng-repeat="item in photoItems" class="ng-scope">
+            <li>
+               <img ng-src="http://placehold.it/600/372c93" alt="" src="./Router_files/372c93">
+            </li>
+        </ul><!-- end ngIf: photoItems.length --><!-- end ngRepeat: item in photoItems -->
+    </div>
+</div></ng-view>
+	</div>
+</div>
+
+<lk-foot class="ng-scope"><foot>
+    <subtitle> foot </subtitle>
+</foot></lk-foot>
+
+
+</body></html>

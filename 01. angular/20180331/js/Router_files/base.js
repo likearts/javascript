@@ -25,24 +25,16 @@
                 }
             }
         }
-        this.getObserver = function(name){
-            try {
-                return this.obsList.list[name];
-            } catch(e){
-                return { then:{getDefer:{then:{}},set:{},get:{}} }
-            }
-        }
     })
     .value('baseObserver',{
-        restApi:'restApi',
-        loading:'loading'
+        restApi:'restApi'
     })
     .factory('restApi',function(baseService,baseObserver,$http){
         return function( config ) {
             var httpRquest = $http(config);
             httpRquest
             .then(function(res){
-                baseService.getObserver(baseObserver.restApi).set(res);
+                baseService.obsList.list[baseObserver.restApi].set(res);
             },function(err){
                 console.log('err',err);
             })
