@@ -1,7 +1,11 @@
 (function(){
     angular.module('home',['baseModel','apiList','utils'])
-    .controller('homeCtrl',function($scope,restApi,apiManager){
+    .controller('homeCtrl',function($scope,restApi,apiManager,baseService,baseObserver){
+        baseService.getObserver(baseObserver.loading).set(true);
         restApi({url:apiManager.mainContent})
+            .then(function(){
+                baseService.getObserver(baseObserver.loading).set(false);
+            })
     })
     .factory('loadInit',function(baseService,baseObserver,amortized){
         return function(scope){
